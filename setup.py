@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='JobTitleTransformer',  # Must be unique on PyPI
-    version='0.1.20',
+    name='jobtitletransformer',  # Must be unique on PyPI
+    version='0.1.21',
     packages=find_packages(), # include=["jobtitletransformer"]
     package_data={"JobTitleTransformer": ["job_scripts/*.py"]},
     install_requires=[
@@ -17,7 +17,7 @@ setup(
         "torch"
     ],
     author='Prasanna UTHAMARAJ',
-    author_email='prasanna.uthamaraj@informa.com',  # Optional but nice
+    author_email='prasannadatabuss@gmail.com',  # Optional but nice
     description='A healthcare-focused job title transformation pipeline.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
