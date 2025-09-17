@@ -10,3 +10,7 @@ unicodedata
 nltk
 corpus
 stopwords
+scikit-learn
+sentence-transformers
+faiss-cpu
+torch

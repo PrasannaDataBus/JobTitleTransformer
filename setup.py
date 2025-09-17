@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='JobTitleTransformer',  # Must be unique on PyPI
-    version='0.1.10',
+    version='0.1.20',
     packages=find_packages(), # include=["jobtitletransformer"]
     package_data={"JobTitleTransformer": ["job_scripts/*.py"]},
     install_requires=[
@@ -10,7 +10,11 @@ setup(
         'numpy',
         'nltk',
         'termcolor',
-        'tabulate'
+        'tabulate',
+        "scikit-learn",
+        "sentence-transformers",
+        "faiss-cpu",
+        "torch"
     ],
     author='Prasanna UTHAMARAJ',
     author_email='prasanna.uthamaraj@informa.com',  # Optional but nice
