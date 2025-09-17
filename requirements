@@ -1,0 +1,16 @@
+pandas
+numpy
+nltk
+termcolor
+tabulate
+sys
+os
+re
+unicodedata
+nltk
+corpus
+stopwords
+scikit-learn
+sentence-transformers
+faiss-cpu
+torch
