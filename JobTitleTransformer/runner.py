@@ -107,17 +107,16 @@ def run_pipeline(df):
     globals_dict = {"df": df}
 
     # Execute each script
+    scripts_dir = files("JobTitleTransformer").joinpath("job_scripts")
     for script_name in ordered_scripts:
-        # Get the path to the script from the installed package
-        script_path = pkg_resources.resource_filename('JobTitleTransformer', f'job_scripts/{script_name}')
+        # Locate the script inside the installed package (works from wheels and editable installs)
+        script = scripts_dir.joinpath(script_name)
         print(f"\nExecuting: {script_name}")
 
-        # Open the script and execute it
-        with open(script_path, "rb") as f:
-            code = compile(f.read(), script_path, 'exec')
-            exec(code, globals_dict)
+        code = compile(script.read_bytes(), str(script), "exec")
+        exec(code, globals_dict)
 
-        # Update df after each script (optional but safe)
+        # Update df after each script
         df = globals_dict["df"]
 
     return df
