@@ -9,42 +9,42 @@ from termcolor import colored
 
 photographer_variants = [
     # Standard Titles & Variants
-    r"(?i)\bPhotographer\b",
-    r"(?i)\bProfessional Photographer\b",
-    r"(?i)\bPhotographer Specialist\b",
-    r"(?i)\bPhotography Expert\b",
-    r"(?i)\bPhotography Consultant\b",
-    r"(?i)\bConsultant Photographer\b",
-    r"(?i)\bPhotographic Artist\b",
+    r"\bPhotographer\b",
+    r"\bProfessional Photographer\b",
+    r"\bPhotographer Specialist\b",
+    r"\bPhotography Expert\b",
+    r"\bPhotography Consultant\b",
+    r"\bConsultant Photographer\b",
+    r"\bPhotographic Artist\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bFotographer\b",
-    r"(?i)\bPhographer\b",
-    r"(?i)\bPhotogarpher\b",
-    r"(?i)\bPhotographer\b",
-    r"(?i)\bPhotograhper\b",
+    r"\bFotographer\b",
+    r"\bPhographer\b",
+    r"\bPhotogarpher\b",
+    r"\bPhotographer\b",
+    r"\bPhotograhper\b",
 
     # Case Variations
-    r"(?i)\bphotographer\b",
-    r"(?i)\bPHOTOGRAPHER\b",
-    r"(?i)\bPhOtOgRaPhEr\b",
-    r"(?i)\bPhoToGrApHeR\b",
+    r"\bphotographer\b",
+    r"\bPHOTOGRAPHER\b",
+    r"\bPhOtOgRaPhEr\b",
+    r"\bPhoToGrApHeR\b",
 
     # Spanish Variants
-    r"(?i)\bFotógrafo\b",
-    r"(?i)\bFotógrafa\b",
-    r"(?i)\bFotógrafo Profesional\b",
-    r"(?i)\bEspecialista en Fotografía\b",
-    r"(?i)\bExperto en Fotografía\b",
-    r"(?i)\bConsultor de Fotografía\b",
-    r"(?i)\bConsultor Fotográfico\b",
-    r"(?i)\bArtista Fotográfico\b",
+    r"\bFotógrafo\b",
+    r"\bFotógrafa\b",
+    r"\bFotógrafo Profesional\b",
+    r"\bEspecialista en Fotografía\b",
+    r"\bExperto en Fotografía\b",
+    r"\bConsultor de Fotografía\b",
+    r"\bConsultor Fotográfico\b",
+    r"\bArtista Fotográfico\b",
 
     # Other Possible Variations
-    r"(?i)\bPhotographic Specialist\b",
-    r"(?i)\bPhotographic Consultant\b",
-    r"(?i)\bPhotography Artist\b",
-    r"(?i)\bPhotography Professional\b",
+    r"\bPhotographic Specialist\b",
+    r"\bPhotographic Consultant\b",
+    r"\bPhotography Artist\b",
+    r"\bPhotography Professional\b",
 ]
 
 # Exact matches that should be updated

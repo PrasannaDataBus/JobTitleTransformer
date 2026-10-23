@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  test:
+    name: Tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      # The rule engine only needs the light dependencies. The ML fallback
+      # (sentence-transformers, FAISS, torch) is not exercised in CI.
+      - name: Install package and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas termcolor tabulate unidecode pytest
+          pip install --no-deps -e .
+
+      - name: Run tests
+        run: pytest -q
+
+  build:
+    name: Build & check package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build sdist and wheel
+        run: |
+          python -m pip install --upgrade pip build twine
+          python -m build
+
+      - name: Check package metadata
+        run: twine check dist/*

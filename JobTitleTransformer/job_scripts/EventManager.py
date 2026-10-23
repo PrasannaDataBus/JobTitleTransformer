@@ -8,75 +8,75 @@ from termcolor import colored
 # Define regex patterns for Event Manager related titles
 
 event_manager_variants = [
-    r"(?i)\bevent\s?manager\b",
-    r"(?i)\bevent\s?planner\b",
-    r"(?i)\bevent\s?coordinator\b",
-    r"(?i)\bevent\s?supervisor\b",
-    r"(?i)\bevent\s?director\b",
-    r"(?i)\bevent\s?organizer\b",
-    r"(?i)\bevent\s?planning\s?manager\b",
-    r"(?i)\bevent\s?production\s?manager\b",
-    r"(?i)\bevent\s?operations\s?manager\b",
-    r"(?i)\bevent\s?staff\s?manager\b",
-    r"(?i)\bevent\s?marketing\s?manager\b",
-    r"(?i)\bevent\s?project\s?manager\b",
-    r"(?i)\bevent\s?management\s?specialist\b",
-    r"(?i)\bevent\s?consultant\b",
-    r"(?i)\bevent\s?strategist\b",
-    r"(?i)\bevent\s?administrator\b",
-    r"(?i)\bTrade Show\b",
-    r"(?i)\bEvents Manager\b",
-    r"(?i)Events",
-    r"(?i)Tradeshow",
-    r"(?i)Exhibition Manager",
-    r"(?i)\bChef De Projet Congres\b",
-    r"(?i)\bConfirm The Booth\b",
-    r"(?i)Mice",
-    r"(?i)Teamlead Congresses",
-    r"(?i)Conference Producer",
-    r"(?i)Booth Staff",
-    r"(?i)Exhibitions",
-    r"(?i)Exhibition",
-    r"(?i)\bCongress Agency\b",
-    r"(?i)\bCongress\b",
-    r"(?i)\bExpo Man\b",
-    r"(?i)\bOnsite Registration Support\b",
-    r"(?i)\bSymposia&Congress Expert\b",
-    r"(?i)\bConference\b",
-    r"(?i)\bEvent Booking\b",
-    r"(?i)\bHost\b",
-    r"(?i)\bEvent Services Manager\b",
-    r"(?i)\bExhibit Planning\b",
-    r"(?i)\bEvent Assistant\b",
-    r"(?i)\bEvent Planning\b",
-    r"(?i)\bConvention Coordinator\b",
-    r"(?i)\bConvention Manager\b",
+    r"\bevent\s?manager\b",
+    r"\bevent\s?planner\b",
+    r"\bevent\s?coordinator\b",
+    r"\bevent\s?supervisor\b",
+    r"\bevent\s?director\b",
+    r"\bevent\s?organizer\b",
+    r"\bevent\s?planning\s?manager\b",
+    r"\bevent\s?production\s?manager\b",
+    r"\bevent\s?operations\s?manager\b",
+    r"\bevent\s?staff\s?manager\b",
+    r"\bevent\s?marketing\s?manager\b",
+    r"\bevent\s?project\s?manager\b",
+    r"\bevent\s?management\s?specialist\b",
+    r"\bevent\s?consultant\b",
+    r"\bevent\s?strategist\b",
+    r"\bevent\s?administrator\b",
+    r"\bTrade Show\b",
+    r"\bEvents Manager\b",
+    r"Events",
+    r"Tradeshow",
+    r"Exhibition Manager",
+    r"\bChef De Projet Congres\b",
+    r"\bConfirm The Booth\b",
+    r"Mice",
+    r"Teamlead Congresses",
+    r"Conference Producer",
+    r"Booth Staff",
+    r"Exhibitions",
+    r"Exhibition",
+    r"\bCongress Agency\b",
+    r"\bCongress\b",
+    r"\bExpo Man\b",
+    r"\bOnsite Registration Support\b",
+    r"\bSymposia&Congress Expert\b",
+    r"\bConference\b",
+    r"\bEvent Booking\b",
+    r"\bHost\b",
+    r"\bEvent Services Manager\b",
+    r"\bExhibit Planning\b",
+    r"\bEvent Assistant\b",
+    r"\bEvent Planning\b",
+    r"\bConvention Coordinator\b",
+    r"\bConvention Manager\b",
 
     # Spanish variants
-    r"(?i)\bgerente\s?de\s?eventos\b",  # Spanish form (event manager)
-    r"(?i)\bplanificador\s?de\s?eventos\b",  # Spanish form (event planner)
-    r"(?i)\bcoordinador\s?de\s?eventos\b",  # Spanish form (event coordinator)
-    r"(?i)\borganizador\s?de\s?eventos\b",  # Spanish form (event organizer)
-    r"(?i)\bdirector\s?de\s?eventos\b",  # Spanish form (event director)
-    r"(?i)\bresponsable\s?de\s?eventos\b",  # Spanish form (event supervisor)
-    r"(?i)\bplanificador\s?de\s?eventos\s?certificado\b",  # Spanish form (certified event planner)
-    r"(?i)\bcoordinador\s?de\s?eventos\s?profesional\b",  # Spanish form (professional event coordinator)
-    r"(?i)\bcoordinador\s?de\s?eventos\s?certificado\b",  # Spanish form (certified event coordinator)
+    r"\bgerente\s?de\s?eventos\b",  # Spanish form (event manager)
+    r"\bplanificador\s?de\s?eventos\b",  # Spanish form (event planner)
+    r"\bcoordinador\s?de\s?eventos\b",  # Spanish form (event coordinator)
+    r"\borganizador\s?de\s?eventos\b",  # Spanish form (event organizer)
+    r"\bdirector\s?de\s?eventos\b",  # Spanish form (event director)
+    r"\bresponsable\s?de\s?eventos\b",  # Spanish form (event supervisor)
+    r"\bplanificador\s?de\s?eventos\s?certificado\b",  # Spanish form (certified event planner)
+    r"\bcoordinador\s?de\s?eventos\s?profesional\b",  # Spanish form (professional event coordinator)
+    r"\bcoordinador\s?de\s?eventos\s?certificado\b",  # Spanish form (certified event coordinator)
 
     # Other possible variations
-    r"(?i)\bmanager\s?of\s?events\b",
-    r"(?i)\bplanner\s?of\s?events\b",
-    r"(?i)\bcoordinator\s?of\s?events\b",
-    r"(?i)\bevent\s?project\s?coordinator\b",
-    r"(?i)\bevent\s?program\s?manager\b",
-    r"(?i)\bcelebration\s?planner\b",
-    r"(?i)\bconference\s?organizer\b",
-    r"(?i)\bfestival\s?organizer\b",
-    r"(?i)\bmeeting\s?planner\b",
-    r"(?i)\bparty\s?planner\b",
-    r"(?i)\bconference\s?manager\b",
-    r"(?i)\bconvention\s?planner\b",
-    r"(?i)\bcorporate\s?event\s?manager\b",
+    r"\bmanager\s?of\s?events\b",
+    r"\bplanner\s?of\s?events\b",
+    r"\bcoordinator\s?of\s?events\b",
+    r"\bevent\s?project\s?coordinator\b",
+    r"\bevent\s?program\s?manager\b",
+    r"\bcelebration\s?planner\b",
+    r"\bconference\s?organizer\b",
+    r"\bfestival\s?organizer\b",
+    r"\bmeeting\s?planner\b",
+    r"\bparty\s?planner\b",
+    r"\bconference\s?manager\b",
+    r"\bconvention\s?planner\b",
+    r"\bcorporate\s?event\s?manager\b",
 ]
 
 # Exact matches that should be updated

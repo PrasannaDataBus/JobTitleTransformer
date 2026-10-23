@@ -9,44 +9,44 @@ from termcolor import colored
 
 pharmacologist_variants = [
     # Standard Titles & Variants
-    r"(?i)\bPharmacologist\b",
-    r"(?i)\bPharmacological Expert\b",
-    r"(?i)\bClinical Pharmacologist\b",
-    r"(?i)\bPharmacology Specialist\b",
-    r"(?i)\bPharmaceutical Scientist\b",
-    r"(?i)\bPharmacologist Consultant\b",
-    r"(?i)\bConsultant Pharmacologist\b",
+    r"\bPharmacologist\b",
+    r"\bPharmacological Expert\b",
+    r"\bClinical Pharmacologist\b",
+    r"\bPharmacology Specialist\b",
+    r"\bPharmaceutical Scientist\b",
+    r"\bPharmacologist Consultant\b",
+    r"\bConsultant Pharmacologist\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bPharmacollogist\b",
-    r"(?i)\bPharmocologist\b",
-    r"(?i)\bPharmocologist\b",
-    r"(?i)\bPharmocologist\b",
-    r"(?i)\bPharmacologist\b",
-    r"(?i)\bPharmcologist\b",
+    r"\bPharmacollogist\b",
+    r"\bPharmocologist\b",
+    r"\bPharmocologist\b",
+    r"\bPharmocologist\b",
+    r"\bPharmacologist\b",
+    r"\bPharmcologist\b",
 
     # Case Variations
-    r"(?i)\bpharmacologist\b",
-    r"(?i)\bPHARMACOLOGIST\b",
-    r"(?i)\bPhArMaCoLoGiSt\b",
-    r"(?i)\bPhArMaCoLoGiSt\b",
+    r"\bpharmacologist\b",
+    r"\bPHARMACOLOGIST\b",
+    r"\bPhArMaCoLoGiSt\b",
+    r"\bPhArMaCoLoGiSt\b",
 
     # Spanish Variants
-    r"(?i)\bFarmacólogo\b",
-    r"(?i)\bFarmacológica\b",
-    r"(?i)\bEspecialista\s?Farmacológico\b",
-    r"(?i)\bFarmacología\s?Clínica\b",
-    r"(?i)\bFarmacología\s?Comunitaria\b",
-    r"(?i)\bFarmacología\s?Hospitalaria\b",
-    r"(?i)\bFarmacólogo\s?Consultor\b",
-    r"(?i)\bConsultor\s?Farmacológico\b",
+    r"\bFarmacólogo\b",
+    r"\bFarmacológica\b",
+    r"\bEspecialista\s?Farmacológico\b",
+    r"\bFarmacología\s?Clínica\b",
+    r"\bFarmacología\s?Comunitaria\b",
+    r"\bFarmacología\s?Hospitalaria\b",
+    r"\bFarmacólogo\s?Consultor\b",
+    r"\bConsultor\s?Farmacológico\b",
 
     # Other Possible Variations
-    r"(?i)\bPharmacological Researcher\b",
-    r"(?i)\bPharmacologist Specialist\b",
-    r"(?i)\bPharmaceutical Expert\b",
-    r"(?i)\bPharmacology Researcher\b",
-    r"(?i)Pharmacology",
+    r"\bPharmacological Researcher\b",
+    r"\bPharmacologist Specialist\b",
+    r"\bPharmaceutical Expert\b",
+    r"\bPharmacology Researcher\b",
+    r"Pharmacology",
 ]
 
 # Exact matches that should be updated

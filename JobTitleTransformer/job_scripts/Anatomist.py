@@ -7,18 +7,18 @@ from termcolor import colored
 
 # Define regex patterns for anatomist related titles
 anatomist_variants = [
-    r"(?i)\bAnatomist\b",
-    r"(?i)\bAnatomy Specialist\b",
-    r"(?i)\bAnatomy Expert\b",
-    r"(?i)\bAnatomy Doctor\b",
-    r"(?i)\bAnatomical Scientist\b",
-    r"(?i)\bAnatomic Pathologist\b",
-    r"(?i)\bAnatomy Researcher\b",
-    r"(?i)\bAnatomy Lecturer\b",
-    r"(?i)\bProfessor of Anatomy\b",
-    r"(?i)\bAnatomy\b",
-    r"(?i)\bAnatomiapatologica\b",
-    r"(?i)\bAnatomiapatologica\b",
+    r"\bAnatomist\b",
+    r"\bAnatomy Specialist\b",
+    r"\bAnatomy Expert\b",
+    r"\bAnatomy Doctor\b",
+    r"\bAnatomical Scientist\b",
+    r"\bAnatomic Pathologist\b",
+    r"\bAnatomy Researcher\b",
+    r"\bAnatomy Lecturer\b",
+    r"\bProfessor of Anatomy\b",
+    r"\bAnatomy\b",
+    r"\bAnatomiapatologica\b",
+    r"\bAnatomiapatologica\b",
 ]
 
 # Exact matches that should be updated

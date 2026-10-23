@@ -9,43 +9,43 @@ from termcolor import colored
 
 orthopedist_variants = [
     # Standard Titles & Abbreviations
-    r"(?i)\bOrthopedist\b",
-    r"(?i)\bOrthopedic\s?Doctor\b",
-    r"(?i)\bOrthopedic\s?Surgeon\b",
-    r"(?i)\bOrtho\s?Doctor\b",
-    r"(?i)\bOrtho\s?Specialist\b",
-    r"(?i)\bOrthopedics\s?Practitioner\b",
-    r"(?i)\bOrthopedics\s?Consultant\b",
-    r"(?i)\bMD\s?Orthopedics\b",
-    r"(?i)\bDMD\s?Orthopedics\b",
-    r"(?i)\bProsthetist & Orthotist\b",
-    r"(?i)\bTraumatology\b",
+    r"\bOrthopedist\b",
+    r"\bOrthopedic\s?Doctor\b",
+    r"\bOrthopedic\s?Surgeon\b",
+    r"\bOrtho\s?Doctor\b",
+    r"\bOrtho\s?Specialist\b",
+    r"\bOrthopedics\s?Practitioner\b",
+    r"\bOrthopedics\s?Consultant\b",
+    r"\bMD\s?Orthopedics\b",
+    r"\bDMD\s?Orthopedics\b",
+    r"\bProsthetist & Orthotist\b",
+    r"\bTraumatology\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bOrthopaedist\b",
-    r"(?i)\bOrtopedist\b",
-    r"(?i)\bOrthopediest\b",
-    r"(?i)\bOrthepedist\b",
-    r"(?i)\bOrthopeedist\b",
-    r"(?i)\bOrthopedics\s?Doctor\b",
+    r"\bOrthopaedist\b",
+    r"\bOrtopedist\b",
+    r"\bOrthopediest\b",
+    r"\bOrthepedist\b",
+    r"\bOrthopeedist\b",
+    r"\bOrthopedics\s?Doctor\b",
 
     # Case Variations
-    r"(?i)\borthopedist\b",
-    r"(?i)\bOrthopedIst\b",
-    r"(?i)\bORTHOPEDIST\b",
-    r"(?i)\bOrThOpEdIsT\b",
+    r"\borthopedist\b",
+    r"\bOrthopedIst\b",
+    r"\bORTHOPEDIST\b",
+    r"\bOrThOpEdIsT\b",
 
     # Spanish Variants
-    r"(?i)\bOrtopedista\b",
-    r"(?i)\bDoctor\s?en\s?Ortopedia\b",
-    r"(?i)\bCirujano\s?Ortopédico\b",
-    r"(?i)\bEspecialista\s?en\s?Ortopedia\b",
+    r"\bOrtopedista\b",
+    r"\bDoctor\s?en\s?Ortopedia\b",
+    r"\bCirujano\s?Ortopédico\b",
+    r"\bEspecialista\s?en\s?Ortopedia\b",
 
     # Other Possible Variations (Including Doctor forms, Specialist forms)
-    r"(?i)\bOrthopedic\s?Expert\b",
-    r"(?i)\bOrthopedic\s?Consultant\b",
-    r"(?i)\bSpecialist\s?in\s?Orthopedics\b",
-    r"(?i)\bOrthopedics\s?Surgeon\b",
+    r"\bOrthopedic\s?Expert\b",
+    r"\bOrthopedic\s?Consultant\b",
+    r"\bSpecialist\s?in\s?Orthopedics\b",
+    r"\bOrthopedics\s?Surgeon\b",
 ]
 
 # Exact matches that should be updated

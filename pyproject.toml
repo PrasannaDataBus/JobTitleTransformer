@@ -1,3 +1,10 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    # Some patterns use capture groups; pandas warns but matching is unaffected.
+    "ignore:This pattern is interpreted as a regular expression:UserWarning",
+]

@@ -7,16 +7,16 @@ from termcolor import colored
 
 # Define regex patterns for angiologist_phlebologist related titles
 angiologist_phlebologist_variants = [
-    r"(?i)\bAngiologist\b",
-    r"(?i)\bPhlebologist\b",
-    r"(?i)\bAngiologist Specialist\b",
-    r"(?i)\bPhlebologist Specialist\b",
-    r"(?i)\bVenous Disease Specialist\b",
-    r"(?i)\bAngiologist Consultant\b",
-    r"(?i)\bPhlebologist Consultant\b",
-    r"(?i)\bAngiology - Aesthetic Medicine\b",
-    r"(?i)\bAesthetic & Phlebolgy\b",
-    r"(?i)\bPhlebotomist\b",
+    r"\bAngiologist\b",
+    r"\bPhlebologist\b",
+    r"\bAngiologist Specialist\b",
+    r"\bPhlebologist Specialist\b",
+    r"\bVenous Disease Specialist\b",
+    r"\bAngiologist Consultant\b",
+    r"\bPhlebologist Consultant\b",
+    r"\bAngiology - Aesthetic Medicine\b",
+    r"\bAesthetic & Phlebolgy\b",
+    r"\bPhlebotomist\b",
 ]
 
 # Exact matches that should be updated

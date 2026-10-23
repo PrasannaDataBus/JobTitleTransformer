@@ -8,33 +8,33 @@ from termcolor import colored
 # Define regex patterns for Lawyer related titles
 
 lawyer_variants = [
-    r"(?i)\bLawyer\b",
-    r"(?i)\bAttorney\b",
-    r"(?i)\bLegal\s?Advisor\b",
-    r"(?i)\bSolicitor\b",
+    r"\bLawyer\b",
+    r"\bAttorney\b",
+    r"\bLegal\s?Advisor\b",
+    r"\bSolicitor\b",
 
     # Common misspellings and case errors
-    r"(?i)\bLwyer\b",
-    r"(?i)\bLawer\b",
-    r"(?i)\bLoyer\b",
-    r"(?i)\bAtorney\b",
-    r"(?i)\bAttorny\b",
+    r"\bLwyer\b",
+    r"\bLawer\b",
+    r"\bLoyer\b",
+    r"\bAtorney\b",
+    r"\bAttorny\b",
 
     # Spanish variants
-    r"(?i)\bAbogado\b",
-    r"(?i)\bAbogada\b",
-    r"(?i)\bAbogado/a\b",
-    r"(?i)\bAbogado/a de defensa\b",
-    r"(?i)\bAbogado/a corporativo\b",
-    r"(?i)\bLicenciado en Derecho\b",
+    r"\bAbogado\b",
+    r"\bAbogada\b",
+    r"\bAbogado/a\b",
+    r"\bAbogado/a de defensa\b",
+    r"\bAbogado/a corporativo\b",
+    r"\bLicenciado en Derecho\b",
 
     # Other possible variations
-    r"(?i)\bCriminal\s?Lawyer\b",
-    r"(?i)\bCivil\s?Lawyer\b",
-    r"(?i)\bCorporate\s?Lawyer\b",
-    r"(?i)\bFamily\s?Lawyer\b",
-    r"(?i)\bPersonal\s?Injury\s?Lawyer\b",
-    r"(?i)\bLaw\b",
+    r"\bCriminal\s?Lawyer\b",
+    r"\bCivil\s?Lawyer\b",
+    r"\bCorporate\s?Lawyer\b",
+    r"\bFamily\s?Lawyer\b",
+    r"\bPersonal\s?Injury\s?Lawyer\b",
+    r"\bLaw\b",
 ]
 
 # Exact matches that should be updated

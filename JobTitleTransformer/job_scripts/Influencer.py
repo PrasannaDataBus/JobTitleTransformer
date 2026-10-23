@@ -8,35 +8,35 @@ from termcolor import colored
 # Define regex patterns for Influencer related titles
 
 influencer_variants = [
-    r"(?i)\bInfluencer\b",  # Standard title
+    r"\bInfluencer\b",  # Standard title
 
     # Common misspellings and case errors
-    r"(?i)\bInfluancer\b",
-    r"(?i)\bInflluencer\b",
-    r"(?i)\bInfluenser\b",
-    r"(?i)\bInfluncer\b",
-    r"(?i)\bInfulencer\b",
+    r"\bInfluancer\b",
+    r"\bInflluencer\b",
+    r"\bInfluenser\b",
+    r"\bInfluncer\b",
+    r"\bInfulencer\b",
 
     # Spanish variants
-    r"(?i)\bInfluenciador\b",
-    r"(?i)\bInfluenciadora\b",
-    r"(?i)\bCreador\s?de\s?Contenido\b",
-    r"(?i)\bCreadora\s?de\s?Contenido\b",
-    r"(?i)\bFigura\s?Pública\b",
-    r"(?i)\bLíder\s?de\s?Opinión\b",
+    r"\bInfluenciador\b",
+    r"\bInfluenciadora\b",
+    r"\bCreador\s?de\s?Contenido\b",
+    r"\bCreadora\s?de\s?Contenido\b",
+    r"\bFigura\s?Pública\b",
+    r"\bLíder\s?de\s?Opinión\b",
 
     # Other possible variations
-    r"(?i)\bContent\s?Creator\b",
-    r"(?i)\bSocial\s?Media\s?Influencer\b",
-    r"(?i)\bDigital\s?Influencer\b",
-    r"(?i)\bBrand\s?Ambassador\b",
-    r"(?i)\bOnline\s?Personality\b",
-    r"(?i)\bKOL\b",
-    r"(?i)\bThought\s?Leader\b",
-    r"(?i)\bBlogger\b",
-    r"(?i)\bOnline\b",
-    r"(?i)\bOnline Work\b",
-    r"(?i)\bTiktok Earning\b",
+    r"\bContent\s?Creator\b",
+    r"\bSocial\s?Media\s?Influencer\b",
+    r"\bDigital\s?Influencer\b",
+    r"\bBrand\s?Ambassador\b",
+    r"\bOnline\s?Personality\b",
+    r"\bKOL\b",
+    r"\bThought\s?Leader\b",
+    r"\bBlogger\b",
+    r"\bOnline\b",
+    r"\bOnline Work\b",
+    r"\bTiktok Earning\b",
 ]
 
 # Exact matches that should be updated

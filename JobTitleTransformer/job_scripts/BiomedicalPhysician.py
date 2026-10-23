@@ -8,18 +8,18 @@ from termcolor import colored
 # Define regex patterns for Biomedical Physician related titles
 
 biomedical_physician_variants = [
-    r"(?i)\bBiomedical\s?Physician\b",
-    r"(?i)\bBiomedical\s?Doctor\b",
-    r"(?i)\bBiomedical\s?Specialist\b",
-    r"(?i)\bMedical\s?Doctor\s?Specialist\b",
-    r"(?i)\bBiomedical\s?Medicine\s?Physician\b",
-    r"(?i)\bBiomed\s?Physician\b",
-    r"(?i)\bBiomed\s?Specialist\b",
-    r"(?i)\bDoctor\s?of\s?Biomedical\s?Science\b",
-    r"(?i)\bAesthetic Biomedicine\b",
-    r"(?i)\bBiomedicina Estetica\b",
-    r"(?i)\bMedical Doctor- Regenerative Medicine\b",
-    r"(?i)\bAesthetics & Regenerative Medicine\b",
+    r"\bBiomedical\s?Physician\b",
+    r"\bBiomedical\s?Doctor\b",
+    r"\bBiomedical\s?Specialist\b",
+    r"\bMedical\s?Doctor\s?Specialist\b",
+    r"\bBiomedical\s?Medicine\s?Physician\b",
+    r"\bBiomed\s?Physician\b",
+    r"\bBiomed\s?Specialist\b",
+    r"\bDoctor\s?of\s?Biomedical\s?Science\b",
+    r"\bAesthetic Biomedicine\b",
+    r"\bBiomedicina Estetica\b",
+    r"\bMedical Doctor- Regenerative Medicine\b",
+    r"\bAesthetics & Regenerative Medicine\b",
 ]
 
 # Exact matches that should be updated

@@ -8,28 +8,28 @@ from termcolor import colored
 # Define regex patterns for Hair Transplant Surgeon related titles
 
 hair_transplant_variants = [
-    r"(?i)\bHair\s?Transplant\s?Surgeon\b",
-    r"(?i)\bHair\s?Transplant\b",
-    r"(?i)\bHair Transplant\b",
-    r"(?i)\bHair Surgery\b",
-    r"(?i)\bHair Restoration\b",
-    r"(?i)\bCirujana Capilar\b",
+    r"\bHair\s?Transplant\s?Surgeon\b",
+    r"\bHair\s?Transplant\b",
+    r"\bHair Transplant\b",
+    r"\bHair Surgery\b",
+    r"\bHair Restoration\b",
+    r"\bCirujana Capilar\b",
 
     # Common misspellings and case errors
-    r"(?i)\bHair\s?Transplante\s?Surgeon\b",
-    r"(?i)\bHair\s?Transplant\s?Surgen\b",
-    r"(?i)\bHair\s?Transplant\s?Surgon\b",
-    r"(?i)\bHair\s?Transplant\s?Surgeon\b",
+    r"\bHair\s?Transplante\s?Surgeon\b",
+    r"\bHair\s?Transplant\s?Surgen\b",
+    r"\bHair\s?Transplant\s?Surgon\b",
+    r"\bHair\s?Transplant\s?Surgeon\b",
 
     # Spanish variants
-    r"(?i)\bCirujano\s?de\s?Trasplante\s?Capilar\b",
-    r"(?i)\bCirujano\s?de\s?Implante\s?Capilar\b",
+    r"\bCirujano\s?de\s?Trasplante\s?Capilar\b",
+    r"\bCirujano\s?de\s?Implante\s?Capilar\b",
 
     # Other possible variations
-    r"(?i)\bDoctor\s?Hair\s?Transplant\s?Surgeon\b",
-    r"(?i)\bBoard-Certified\s?Hair\s?Transplant\s?Surgeon\b",
-    r"(?i)\bHair\s?Restoration\s?Surgeon\b",
-    r"(?i)\bHair\s?Transplant\s?Specialist\b",
+    r"\bDoctor\s?Hair\s?Transplant\s?Surgeon\b",
+    r"\bBoard-Certified\s?Hair\s?Transplant\s?Surgeon\b",
+    r"\bHair\s?Restoration\s?Surgeon\b",
+    r"\bHair\s?Transplant\s?Specialist\b",
 ]
 
 # Exact matches that should be updated

@@ -8,22 +8,22 @@ from termcolor import colored
 # Define regex patterns for Dermatologic Surgeon related titles
 
 dermatologic_surgeon_variants = [
-    r"(?i)\bdermatologic\s?surgeon\b",
-    r"(?i)\bdermatolog\s?surgeon\b",
-    r"(?i)\bdermatologic\s?surgon\b",
-    r"(?i)\bdermatolgist\s?surgeon\b",
-    r"(?i)\bdermatolog\s?surgeon\b",
-    r"(?i)\bsurgeon\s?dermatologico\b",
-    r"(?i)\bcirujano\s?dermatologico\b",
-    r"(?i)\bcirujano\s?dermatologo\b",
-    r"(?i)\bdoctor\s?dermatologic\s?surgeon\b",
-    r"(?i)\bdermatologic\s?surgical\s?specialist\b",
-    r"(?i)\bboard\s?certified\s?dermatologic\s?surgeon\b",
-    r"(?i)\bDermatologic Surgery\b",
-    r"(?i)\bDermatological Surgery\b",
-    r"(?i)\bDermatologistDermatopathologistDermatologic Surgeon\b",
-    r"(?i)\bDermatology & Aesthetic Surgery\b",
-    r"(?i)\bCirujana Dermatologa\b",
+    r"\bdermatologic\s?surgeon\b",
+    r"\bdermatolog\s?surgeon\b",
+    r"\bdermatologic\s?surgon\b",
+    r"\bdermatolgist\s?surgeon\b",
+    r"\bdermatolog\s?surgeon\b",
+    r"\bsurgeon\s?dermatologico\b",
+    r"\bcirujano\s?dermatologico\b",
+    r"\bcirujano\s?dermatologo\b",
+    r"\bdoctor\s?dermatologic\s?surgeon\b",
+    r"\bdermatologic\s?surgical\s?specialist\b",
+    r"\bboard\s?certified\s?dermatologic\s?surgeon\b",
+    r"\bDermatologic Surgery\b",
+    r"\bDermatological Surgery\b",
+    r"\bDermatologistDermatopathologistDermatologic Surgeon\b",
+    r"\bDermatology & Aesthetic Surgery\b",
+    r"\bCirujana Dermatologa\b",
 ]
 
 # Exact matches that should be updated

@@ -9,38 +9,38 @@ from termcolor import colored
 
 cytologist_variants = [
     # Standard title variations
-    r"(?i)\bCytologist\b",
-    r"(?i)\bCytology\s?Specialist\b",
-    r"(?i)\bCytotechnologist\b",
-    r"(?i)\bClinical\s?Cytologist\b",
-    r"(?i)\bMedical\s?Cytologist\b",
+    r"\bCytologist\b",
+    r"\bCytology\s?Specialist\b",
+    r"\bCytotechnologist\b",
+    r"\bClinical\s?Cytologist\b",
+    r"\bMedical\s?Cytologist\b",
 
     # Common misspellings and case mistakes
-    r"(?i)\bCyotologist\b",
-    r"(?i)\bCytoligist\b",
-    r"(?i)\bCytolologist\b",
-    r"(?i)\bCytoligyst\b",
+    r"\bCyotologist\b",
+    r"\bCytoligist\b",
+    r"\bCytolologist\b",
+    r"\bCytoligyst\b",
 
     # Variants in Spanish and other languages
-    r"(?i)\bCitólogo\b",
-    r"(?i)\bEspecialista\s?en\s?Citología\b",
-    r"(?i)\bTécnico\s?en\s?Citología\b",
+    r"\bCitólogo\b",
+    r"\bEspecialista\s?en\s?Citología\b",
+    r"\bTécnico\s?en\s?Citología\b",
 
     # Other possible variations
-    r"(?i)\bBoard\s?-?\s?Certified\s?Cytologist\b",
-    r"(?i)\bPathology\s?Cytologist\b",
-    r"(?i)\bDiagnostic\s?Cytologist\b",
+    r"\bBoard\s?-?\s?Certified\s?Cytologist\b",
+    r"\bPathology\s?Cytologist\b",
+    r"\bDiagnostic\s?Cytologist\b",
 ]
 
 # Exact matches that should be updated
 cytologist_exact_matches = {
-    r"(?i)\bCyotologist\b",
-    r"(?i)\bCytoligist\b",
-    r"(?i)\bCytolologist\b",
-    r"(?i)\bCytoligyst\b",
-    r"(?i)\bCitólogo\b",
-    r"(?i)\bEspecialista\s?en\s?Citología\b",
-    r"(?i)\bTécnico\s?en\s?Citología\b",
+    r"\bCyotologist\b",
+    r"\bCytoligist\b",
+    r"\bCytolologist\b",
+    r"\bCytoligyst\b",
+    r"\bCitólogo\b",
+    r"\bEspecialista\s?en\s?Citología\b",
+    r"\bTécnico\s?en\s?Citología\b",
 }
 
 # Define patterns (these should NOT be changed)

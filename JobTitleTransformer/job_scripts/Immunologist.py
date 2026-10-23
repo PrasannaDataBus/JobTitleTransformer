@@ -8,30 +8,30 @@ from termcolor import colored
 # Define regex patterns for Immunologist related titles
 
 immunologist_variants = [
-    r"(?i)\bImmunologist\b",
+    r"\bImmunologist\b",
 
     # Common misspellings and case errors
-    r"(?i)\bImunologist\b",
-    r"(?i)\bImmnuologist\b",
-    r"(?i)\bImmunoligist\b",
-    r"(?i)\bImmunollogist\b",
-    r"(?i)\bImmunolgist\b",
-    r"(?i)\bVirologist\b",
+    r"\bImunologist\b",
+    r"\bImmnuologist\b",
+    r"\bImmunoligist\b",
+    r"\bImmunollogist\b",
+    r"\bImmunolgist\b",
+    r"\bVirologist\b",
 
     # Spanish variants
-    r"(?i)\bInmunólogo\b",
-    r"(?i)\bInmunóloga\b",
-    r"(?i)\bEspecialista\s?en\s?Inmunología\b",
+    r"\bInmunólogo\b",
+    r"\bInmunóloga\b",
+    r"\bEspecialista\s?en\s?Inmunología\b",
 
     # Other possible variations
-    r"(?i)\bImmunology\s?Specialist\b",
-    r"(?i)\bDoctor\s?of\s?Immunology\b",
-    r"(?i)\bClinical\s?Immunologist\b",
-    r"(?i)\bResearch\s?Immunologist\b",
-    r"(?i)\bAllergy\s?and\s?Immunology\s?Specialist\b",
-    r"(?i)\bImmunology\b",
-    r"(?i)\bAllergy Immunology\b",
-    r"(?i)\bAllergy\b",
+    r"\bImmunology\s?Specialist\b",
+    r"\bDoctor\s?of\s?Immunology\b",
+    r"\bClinical\s?Immunologist\b",
+    r"\bResearch\s?Immunologist\b",
+    r"\bAllergy\s?and\s?Immunology\s?Specialist\b",
+    r"\bImmunology\b",
+    r"\bAllergy Immunology\b",
+    r"\bAllergy\b",
 ]
 
 # Exact matches that should be updated

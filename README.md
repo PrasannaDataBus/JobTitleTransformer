@@ -1,5 +1,7 @@
 # JobTitleTransformer
 
+[![CI](https://github.com/PrasannaDataBus/JobTitleTransformer/actions/workflows/ci.yml/badge.svg)](https://github.com/PrasannaDataBus/JobTitleTransformer/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/jobtitletransformer)](https://pypi.org/project/jobtitletransformer/) [![Python](https://img.shields.io/pypi/pyversions/jobtitletransformer)](https://pypi.org/project/jobtitletransformer/)
+
 **JobTitleTransformer** is an enterprise-grade, hybrid `NLP pipeline` designed to ingest, sanitize, and normalize highly unstructured, multi-lingual healthcare job titles into a standardized corporate taxonomy. 
 
 Built for seamless integration into broader `ETL workflows`, this library ensures high-quality `Data Modeling` for `Downstream Platforms` , including `Data Lakes`, `Data Hubs`, `Data Warehouses`, `Data Marts`, and `Semantic Models`.
@@ -88,6 +90,18 @@ df = raw_data.rename(columns={"job_title": "speciality"}).copy()
 
 enriched_df = JobTitleTransformer.run_pipeline(df)
 ```
+
+## 🧪 Testing
+
+The deterministic rule engine is covered by an automated test suite (known mappings, typos, multilingual variants, HTML entities, and row-preservation checks). GitHub Actions runs it on every pull request across Python 3.9–3.13 and verifies that the package builds.
+
+```bash
+pip install pandas termcolor tabulate unidecode pytest
+pip install --no-deps -e .
+pytest
+```
+
+---
 
 🧠 Author & Maintainer
 

@@ -8,13 +8,13 @@ from termcolor import colored
 # Define regex patterns for Aesthetic & Anti-Aging Physician related titles (Variants)
 aesthetic_antiaging_physician_variants = [
     r'\b(?:Aesthetic & Anti Aging|Aesthetic & AntiAging|Aesthetic & Antiaging)\b',
-    r"(?i)\bAesthetic Antiage & Resgenerative Medicine\b",
-    r"(?i)\bAppearance Medicine\b",
-    r"(?i)\bSkin Rejuvenation & Resurfacing\b",
-    r"(?i)\bNon Surgery\b",
-    r"(?i)\bAesthetic Body Contouring Specialist\b",
-    r"(?i)\bAesthetic&Anti-Aging Physcian\b",
-    r"(?i)\bDr  Aesthetic & Anti-Aging Medicine\b",
+    r"\bAesthetic Antiage & Resgenerative Medicine\b",
+    r"\bAppearance Medicine\b",
+    r"\bSkin Rejuvenation & Resurfacing\b",
+    r"\bNon Surgery\b",
+    r"\bAesthetic Body Contouring Specialist\b",
+    r"\bAesthetic&Anti-Aging Physcian\b",
+    r"\bDr  Aesthetic & Anti-Aging Medicine\b",
 ]
 
 # Exact matches that should be updated

@@ -8,25 +8,25 @@ from termcolor import colored
 # Define regex patterns for Hematologist related titles
 
 hematologist_variants = [
-    r"(?i)\bHematologist\b",  # Standard title
+    r"\bHematologist\b",  # Standard title
 
     # Common misspellings and case errors
-    r"(?i)\bHaematologist\b",
-    r"(?i)\bHematoligst\b",
-    r"(?i)\bHemotologist\b",
-    r"(?i)\bHematlogist\b",
-    r"(?i)\bHematolgist\b",
-    r"(?i)\bHematoloigst\b",
+    r"\bHaematologist\b",
+    r"\bHematoligst\b",
+    r"\bHemotologist\b",
+    r"\bHematlogist\b",
+    r"\bHematolgist\b",
+    r"\bHematoloigst\b",
 
     # Spanish variants
-    r"(?i)\bHematólogo\b",
-    r"(?i)\bEspecialista\s?en\s?Hematología\b",
+    r"\bHematólogo\b",
+    r"\bEspecialista\s?en\s?Hematología\b",
 
     # Other possible variations
-    r"(?i)\bBlood\s?Doctor\b",
-    r"(?i)\bHematology\s?Specialist\b",
-    r"(?i)\bDoctor\s?of\s?Hematology\b",
-    r"(?i)\bHematology\s?Consultant\b",
+    r"\bBlood\s?Doctor\b",
+    r"\bHematology\s?Specialist\b",
+    r"\bDoctor\s?of\s?Hematology\b",
+    r"\bHematology\s?Consultant\b",
 ]
 
 # Exact matches that should be updated

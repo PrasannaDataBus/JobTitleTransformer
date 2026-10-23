@@ -9,51 +9,51 @@ from termcolor import colored
 
 dental_surgeon_variants = [
     # Standard title variations
-    r"(?i)\bDental\s?Surgeon\b",
-    r"(?i)\bCosmetic\s?Dental\s?Surgeon\b",
-    r"(?i)\bGeneral\s?Dental\s?Surgeon\b",
-    r"(?i)\bDDS\b",
-    r"(?i)\bD D S\b",
-    r"(?i)\bCosmetic Dentition\b",
-    r"(?i)\bDental Surgron\b",
-    r"(?i)\bDentistDental Surgeon\b",
-    r"(?i)\bCirurgia Dentista\b",
-    r"(?i)\bDentist Surgeon\b",
-    r"(?i)\bCirurgiao Dentista\b",
-    r"(?i)\bFarmacist & Dentist Surgery\b",
-    r"(?i)\bChirurgien Dentiste\b",
-    r"(?i)\bCirujana Dentista\b",
-    r"(?i)\bCirugia Dentista\b",
-    r"(?i)\bCirurgia-Dentista\b",
-    r"(?i)\bDental Surgery\b",
-    r"(?i)\bCirugia Dentista Hof\b",
-    r"(?i)\bDental Surgey\b",
+    r"\bDental\s?Surgeon\b",
+    r"\bCosmetic\s?Dental\s?Surgeon\b",
+    r"\bGeneral\s?Dental\s?Surgeon\b",
+    r"\bDDS\b",
+    r"\bD D S\b",
+    r"\bCosmetic Dentition\b",
+    r"\bDental Surgron\b",
+    r"\bDentistDental Surgeon\b",
+    r"\bCirurgia Dentista\b",
+    r"\bDentist Surgeon\b",
+    r"\bCirurgiao Dentista\b",
+    r"\bFarmacist & Dentist Surgery\b",
+    r"\bChirurgien Dentiste\b",
+    r"\bCirujana Dentista\b",
+    r"\bCirugia Dentista\b",
+    r"\bCirurgia-Dentista\b",
+    r"\bDental Surgery\b",
+    r"\bCirugia Dentista Hof\b",
+    r"\bDental Surgey\b",
 
     # Common misspellings and case mistakes
-    r"(?i)\bDentel\s?Surgeon\b",
+    r"\bDentel\s?Surgeon\b",
 
     # Variants in Spanish and other languages
-    r"(?i)\bCirujano\s?Dental\b",
-    r"(?i)\bCirujano\s?Dentista\b",
+    r"\bCirujano\s?Dental\b",
+    r"\bCirujano\s?Dentista\b",
 
     # Other possible variations (including specialist forms)
-    r"(?i)\bCertified\s?Dental\s?Surgeon\b",
-    r"(?i)\bLicensed\s?Dental\s?Surgeon\b",
-    r"(?i)\bSpecialist\s?Dental\s?Surgeon\b",
-    r"(?i)\bRegistered\s?Dental\s?Surgeon\b",
+    r"\bCertified\s?Dental\s?Surgeon\b",
+    r"\bLicensed\s?Dental\s?Surgeon\b",
+    r"\bSpecialist\s?Dental\s?Surgeon\b",
+    r"\bRegistered\s?Dental\s?Surgeon\b",
 ]
 
 # Exact matches that should be updated
 dental_surgeon_exact_matches = {
-    r"(?i)\bDentel\s?Surgeon\b",
-    r"(?i)\bCirujano\s?Dental\b",
-    r"(?i)\bCirujano\s?Dentista\b",
+    r"\bDentel\s?Surgeon\b",
+    r"\bCirujano\s?Dental\b",
+    r"\bCirujano\s?Dentista\b",
 }
 
 # Define patterns (these should NOT be changed)
 dental_surgeon_exclusions = [
-    r"(?i)\bMaxillo\s?Facial\b",
-    r"(?i)\bMaxillo-Facial\b"
+    r"\bMaxillo\s?Facial\b",
+    r"\bMaxillo-Facial\b"
 ] # maxillo variants
 
 # Create a mask for Dental Surgeon

@@ -9,47 +9,47 @@ from termcolor import colored
 
 sports_med_variants = [
     # Standard Titles & Variants
-    r"(?i)\bSports Medicine Physician\b",  # General term
-    r"(?i)\bSports Medicine Specialist\b",  # Specialist in sports medicine
-    r"(?i)\bSports Doctor\b",  # General term for sports-focused doctor
-    r"(?i)\bSports Physician\b",  # Alternate term for sports-focused doctor
-    r"(?i)\bSports Medicine Doctor\b",  # Another variation for a sports-focused physician
-    r"(?i)\bSports Medicine\b",  # General term
+    r"\bSports Medicine Physician\b",  # General term
+    r"\bSports Medicine Specialist\b",  # Specialist in sports medicine
+    r"\bSports Doctor\b",  # General term for sports-focused doctor
+    r"\bSports Physician\b",  # Alternate term for sports-focused doctor
+    r"\bSports Medicine Doctor\b",  # Another variation for a sports-focused physician
+    r"\bSports Medicine\b",  # General term
 
     # Misspellings & Typographical Errors
-    r"(?i)\bSport Medicine Physician\b",  # Common misspelling
-    r"(?i)\bSport Medicine Specialist\b",  # Misspelling of "Sports"
-    r"(?i)\bSports Medecine Physician\b",  # Misspelling of "Medicine"
-    r"(?i)\bSports Mediine Physician\b",  # Typo with double 'i'
+    r"\bSport Medicine Physician\b",  # Common misspelling
+    r"\bSport Medicine Specialist\b",  # Misspelling of "Sports"
+    r"\bSports Medecine Physician\b",  # Misspelling of "Medicine"
+    r"\bSports Mediine Physician\b",  # Typo with double 'i'
 
     # Case Variations
-    r"(?i)\bSPORTS MEDICINE PHYSICIAN\b",  # Uppercase variation
-    r"(?i)\bsports medicine physician\b",  # Lowercase variation
-    r"(?i)\bSpOrTs MeDiCiNe PhYsIcIaN\b",  # Mixed case variation
+    r"\bSPORTS MEDICINE PHYSICIAN\b",  # Uppercase variation
+    r"\bsports medicine physician\b",  # Lowercase variation
+    r"\bSpOrTs MeDiCiNe PhYsIcIaN\b",  # Mixed case variation
 
     # Spanish Variants
-    r"(?i)\bMédico de Medicina Deportiva\b",  # General term for Sports Medicine Physician
-    r"(?i)\bEspecialista en Medicina Deportiva\b",  # Specialist in Sports Medicine
-    r"(?i)\bMédico Deportivo\b",  # Sports doctor in Spanish
-    r"(?i)\bFisioterapeuta Deportivo\b",  # Sports physiotherapist (closely related)
-    r"(?i)\bMédico de Deporte\b",  # Another variant for sports physician
-    r"(?i)\bMedicina del Deporte\b",  # Sports Medicine as a field (generic)
-    r"(?i)\bMedicina Deportiva\b",  # General term for Sports Medicine Physician
+    r"\bMédico de Medicina Deportiva\b",  # General term for Sports Medicine Physician
+    r"\bEspecialista en Medicina Deportiva\b",  # Specialist in Sports Medicine
+    r"\bMédico Deportivo\b",  # Sports doctor in Spanish
+    r"\bFisioterapeuta Deportivo\b",  # Sports physiotherapist (closely related)
+    r"\bMédico de Deporte\b",  # Another variant for sports physician
+    r"\bMedicina del Deporte\b",  # Sports Medicine as a field (generic)
+    r"\bMedicina Deportiva\b",  # General term for Sports Medicine Physician
 
     # Hybrid Spanish-English Variants
-    r"(?i)\bSports Médico\b",  # Mixed term
-    r"(?i)\bSports Médico Deportivo\b",  # Mixed term
+    r"\bSports Médico\b",  # Mixed term
+    r"\bSports Médico Deportivo\b",  # Mixed term
 
     # Other Possible Variations (Doctor Forms, Specialist Forms)
-    r"(?i)\bSports Medicine Specialist Physician\b",  # Specialist term
-    r"(?i)\bSports Medicine Expert\b",  # Expert term for sports medicine
-    r"(?i)\bSports Physician Specialist\b",  # Specialist form of physician
-    r"(?i)\bSports Medicine Consultant\b",  # Consulting variant
-    r"(?i)\bSports Rehabilitation Doctor\b",  # Related rehabilitation term
-    r"(?i)\bSports Injury Specialist\b",  # Related to injury management in sports
-    r"(?i)\bMedico Esportista\b",
-    r"(?i)Esportista\b",
-    r"(?i)\bGym Ecology\b",
+    r"\bSports Medicine Specialist Physician\b",  # Specialist term
+    r"\bSports Medicine Expert\b",  # Expert term for sports medicine
+    r"\bSports Physician Specialist\b",  # Specialist form of physician
+    r"\bSports Medicine Consultant\b",  # Consulting variant
+    r"\bSports Rehabilitation Doctor\b",  # Related rehabilitation term
+    r"\bSports Injury Specialist\b",  # Related to injury management in sports
+    r"\bMedico Esportista\b",
+    r"Esportista\b",
+    r"\bGym Ecology\b",
 ]
 
 # Exact matches that should be updated

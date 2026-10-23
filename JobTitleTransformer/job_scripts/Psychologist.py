@@ -9,52 +9,52 @@ from termcolor import colored
 
 psychologist_variants = [
     # Standard Titles & Variants
-    r"(?i)\bPsychologist\b",
-    r"(?i)\bClinical Psychologist\b",
-    r"(?i)\bLicensed Psychologist\b",
-    r"(?i)\bPsychology Specialist\b",
-    r"(?i)\bBehavioral Psychologist\b",
-    r"(?i)\bMental Health Psychologist\b",
+    r"\bPsychologist\b",
+    r"\bClinical Psychologist\b",
+    r"\bLicensed Psychologist\b",
+    r"\bPsychology Specialist\b",
+    r"\bBehavioral Psychologist\b",
+    r"\bMental Health Psychologist\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bPshychologist\b",
-    r"(?i)\bPsychologst\b",
-    r"(?i)\bPsycholigist\b",
-    r"(?i)\bPsycholgist\b",
-    r"(?i)\bPsycologist\b",
-    r"(?i)\bPsychollogist\b",
-    r"(?i)\bPsychologgist\b",
-    r"(?i)\bPsychologisst\b",
-    r"(?i)\bPsichologist\b",
+    r"\bPshychologist\b",
+    r"\bPsychologst\b",
+    r"\bPsycholigist\b",
+    r"\bPsycholgist\b",
+    r"\bPsycologist\b",
+    r"\bPsychollogist\b",
+    r"\bPsychologgist\b",
+    r"\bPsychologisst\b",
+    r"\bPsichologist\b",
 
     # Case Variations
-    r"(?i)\bPSYCHOLOGIST\b",
-    r"(?i)\bpsychologist\b",
-    r"(?i)\bPsYcHoLoGiSt\b",
+    r"\bPSYCHOLOGIST\b",
+    r"\bpsychologist\b",
+    r"\bPsYcHoLoGiSt\b",
 
     # Spanish Variants
-    r"(?i)\bPsicólogo\b",
-    r"(?i)\bPsicóloga\b",
-    r"(?i)\bDoctor en Psicología\b",
-    r"(?i)\bEspecialista en Psicología\b",
-    r"(?i)\bMédico Psicólogo\b",
-    r"(?i)\bPsicólogo Clínico\b",
-    r"(?i)\bPsicólogo de la Salud\b",
+    r"\bPsicólogo\b",
+    r"\bPsicóloga\b",
+    r"\bDoctor en Psicología\b",
+    r"\bEspecialista en Psicología\b",
+    r"\bMédico Psicólogo\b",
+    r"\bPsicólogo Clínico\b",
+    r"\bPsicólogo de la Salud\b",
 
     # Hybrid Spanish-English Variants
-    r"(?i)\bPsicologyst\b",
-    r"(?i)\bPsychologa\b",
+    r"\bPsicologyst\b",
+    r"\bPsychologa\b",
 
     # Other Possible Variations (Doctor Forms, Specialist Forms)
-    r"(?i)\bConsultant Psychologist\b",
-    r"(?i)\bSenior Psychologist\b",
-    r"(?i)\bLead Psychologist\b",
-    r"(?i)\bForensic Psychologist\b",
-    r"(?i)\bChild Psychologist\b",
-    r"(?i)\bGeriatric Psychologist\b",
-    r"(?i)\bNeuropsychologist\b",
-    r"(?i)\bPsychology\b",
-    r"(?i)\bChild & Adolescent Neuropsichiatry\b",
+    r"\bConsultant Psychologist\b",
+    r"\bSenior Psychologist\b",
+    r"\bLead Psychologist\b",
+    r"\bForensic Psychologist\b",
+    r"\bChild Psychologist\b",
+    r"\bGeriatric Psychologist\b",
+    r"\bNeuropsychologist\b",
+    r"\bPsychology\b",
+    r"\bChild & Adolescent Neuropsichiatry\b",
 ]
 
 # Exact matches that should be updated

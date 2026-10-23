@@ -9,45 +9,45 @@ from termcolor import colored
 
 oral_maxillofacial_variants = [
     # Standard Titles & Abbreviations
-    r"(?i)\bOral\s?and\s?Maxillofacial\s?Surgeon\b",
-    r"(?i)\bOral\s?&\s?Maxillofacial\s?Surgeon\b",
-    r"(?i)\bOMFS\b",
+    r"\bOral\s?and\s?Maxillofacial\s?Surgeon\b",
+    r"\bOral\s?&\s?Maxillofacial\s?Surgeon\b",
+    r"\bOMFS\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bOral\s?and\s?Maxilofacial\s?Surgeon\b",
-    r"(?i)\bOral\s?and\s?Maxillafacial\s?Surgeon\b",
-    r"(?i)\bOral\s?and\s?Maxilofacil\s?Surgeon\b",
-    r"(?i)\bOral\s?and\s?Maxilofascial\s?Surgeon\b",
-    r"(?i)\bOral\s?and\s?Maxilofasial\s?Surgeon\b",
-    r"(?i)\bOral\s?Maxillofacial\s?Surgeon\b",
-    r"(?i)\bOral\s?Maxilofacial\s?Surgeon\b",
-    r"(?i)\bOral\s?Maxilofacil\s?Surgeon\b",
-    r"(?i)\bOral\s?Maxilofascial\s?Surgeon\b",
-    r"(?i)\bOral\s?Maxilofasial\s?Surgeon\b",
-    r"(?i)\bOral\s?&\s?Maxilofacial\s?Surgeon\b",
+    r"\bOral\s?and\s?Maxilofacial\s?Surgeon\b",
+    r"\bOral\s?and\s?Maxillafacial\s?Surgeon\b",
+    r"\bOral\s?and\s?Maxilofacil\s?Surgeon\b",
+    r"\bOral\s?and\s?Maxilofascial\s?Surgeon\b",
+    r"\bOral\s?and\s?Maxilofasial\s?Surgeon\b",
+    r"\bOral\s?Maxillofacial\s?Surgeon\b",
+    r"\bOral\s?Maxilofacial\s?Surgeon\b",
+    r"\bOral\s?Maxilofacil\s?Surgeon\b",
+    r"\bOral\s?Maxilofascial\s?Surgeon\b",
+    r"\bOral\s?Maxilofasial\s?Surgeon\b",
+    r"\bOral\s?&\s?Maxilofacial\s?Surgeon\b",
 
     # Case Variations
-    r"(?i)\boral and maxillofacial surgeon\b",
-    r"(?i)\bOral And Maxillofacial Surgeon\b",
-    r"(?i)\bORAL AND MAXILLOFACIAL SURGEON\b",
-    r"(?i)\bOrAl aNd MaXiLloFaCiaL SuRgEoN\b",
+    r"\boral and maxillofacial surgeon\b",
+    r"\bOral And Maxillofacial Surgeon\b",
+    r"\bORAL AND MAXILLOFACIAL SURGEON\b",
+    r"\bOrAl aNd MaXiLloFaCiaL SuRgEoN\b",
 
     # Spanish Variants
-    r"(?i)\bCirujano\s?Oral\s?y\s?Maxilofacial\b",
-    r"(?i)\bCirugía\s?Oral\s?y\s?Maxilofacial\b",
-    r"(?i)\bEspecialista\s?en\s?Cirugía\s?Oral\s?y\s?Maxilofacial\b",
-    r"(?i)\bCirujano\s?Oral\s?y\s?Facial\b",
+    r"\bCirujano\s?Oral\s?y\s?Maxilofacial\b",
+    r"\bCirugía\s?Oral\s?y\s?Maxilofacial\b",
+    r"\bEspecialista\s?en\s?Cirugía\s?Oral\s?y\s?Maxilofacial\b",
+    r"\bCirujano\s?Oral\s?y\s?Facial\b",
 
     # Other Possible Variations (Including Doctor forms, Specialist forms)
-    r"(?i)\bOral\s?and\s?Maxillofacial\s?Physician\b",
-    r"(?i)\bOral\s?and\s?Maxillofacial\s?Specialist\b",
-    r"(?i)\bOral\s?Surgeon\b",
-    r"(?i)\bOral & Maxillofacial Surgery\b",
-    r"(?i)\bHarmonizacao Orofacial\b",
-    r"(?i)\bOmf Surgeon\b",
-    r"(?i)\bOrofacial Harmonization\b",
-    r"(?i)\bOral Surgeon & Medical Aesthetic Doctor\b",
-    r"(?i)\bOral Surgery\b",
+    r"\bOral\s?and\s?Maxillofacial\s?Physician\b",
+    r"\bOral\s?and\s?Maxillofacial\s?Specialist\b",
+    r"\bOral\s?Surgeon\b",
+    r"\bOral & Maxillofacial Surgery\b",
+    r"\bHarmonizacao Orofacial\b",
+    r"\bOmf Surgeon\b",
+    r"\bOrofacial Harmonization\b",
+    r"\bOral Surgeon & Medical Aesthetic Doctor\b",
+    r"\bOral Surgery\b",
 ]
 
 # Exact matches that should be updated
