@@ -9,48 +9,48 @@ from termcolor import colored
 
 rheumatologist_variants = [
     # Standard Titles & Variants
-    r"(?i)\bRheumatologist\b",
-    r"(?i)\bRheumatology Specialist\b",
-    r"(?i)\bRheumatology Consultant\b",
-    r"(?i)\bRheumatic Disease Specialist\b",
-    r"(?i)\bRheumatology Physician\b",
-    r"(?i)\bRheumatology Doctor\b",
+    r"\bRheumatologist\b",
+    r"\bRheumatology Specialist\b",
+    r"\bRheumatology Consultant\b",
+    r"\bRheumatic Disease Specialist\b",
+    r"\bRheumatology Physician\b",
+    r"\bRheumatology Doctor\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bRheumatoligist\b",
-    r"(?i)\bRheumatologistt\b",
-    r"(?i)\bRheumatoligistt\b",
-    r"(?i)\bReumatologist\b",
-    r"(?i)\bRheumatoligst\b",
-    r"(?i)\bRheumatogist\b",
+    r"\bRheumatoligist\b",
+    r"\bRheumatologistt\b",
+    r"\bRheumatoligistt\b",
+    r"\bReumatologist\b",
+    r"\bRheumatoligst\b",
+    r"\bRheumatogist\b",
 
     # Case Variations
-    r"(?i)\bRHEUMATOLOGIST\b",
-    r"(?i)\bRheumatologist\b",
-    r"(?i)\bRHEUMATOLOGISTt\b",
-    r"(?i)\brheumatologist\b",
+    r"\bRHEUMATOLOGIST\b",
+    r"\bRheumatologist\b",
+    r"\bRHEUMATOLOGISTt\b",
+    r"\brheumatologist\b",
 
     # Spanish Variants
-    r"(?i)\bReumatólogo\b",
-    r"(?i)\bEspecialista en Reumatología\b",
-    r"(?i)\bMédico Reumatólogo\b",
-    r"(?i)\bMédico Especialista en Reumatología\b",
-    r"(?i)\bEspecialista en Enfermedades Reumáticas\b",
-    r"(?i)\bReumatólogo Clínico\b",
-    r"(?i)\bReumatología\b",
+    r"\bReumatólogo\b",
+    r"\bEspecialista en Reumatología\b",
+    r"\bMédico Reumatólogo\b",
+    r"\bMédico Especialista en Reumatología\b",
+    r"\bEspecialista en Enfermedades Reumáticas\b",
+    r"\bReumatólogo Clínico\b",
+    r"\bReumatología\b",
 
     # Hybrid Spanish-English Variants
-    r"(?i)\bRheumatologist Especialista\b",
-    r"(?i)\bRheumatology Reumatólogo\b",
+    r"\bRheumatologist Especialista\b",
+    r"\bRheumatology Reumatólogo\b",
 
     # Other Possible Variations (Doctor Forms, Specialist Forms)
-    r"(?i)\bRheumatology Specialist\b",
-    r"(?i)\bRheumatic Disease Doctor\b",
-    r"(?i)\bRheumatology Physician\b",
-    r"(?i)\bRheumatology Consultant\b",
-    r"(?i)\bReumatic Disease Consultant\b",
-    r"(?i)\bArthritis Specialist\b",
-    r"(?i)\bChronic Pain Specialist\b",
+    r"\bRheumatology Specialist\b",
+    r"\bRheumatic Disease Doctor\b",
+    r"\bRheumatology Physician\b",
+    r"\bRheumatology Consultant\b",
+    r"\bReumatic Disease Consultant\b",
+    r"\bArthritis Specialist\b",
+    r"\bChronic Pain Specialist\b",
 ]
 
 # Exact matches that should be updated

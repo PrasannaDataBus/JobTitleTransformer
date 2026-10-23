@@ -7,15 +7,15 @@ from termcolor import colored
 
 # Define regex patterns for andrologist related titles
 andrologist_variants = [
-    r"(?i)\bAndrologist\b",
-    r"(?i)\bAndrology Specialist\b",
-    r"(?i)\bAndrology Doctor\b",
-    r"(?i)\bAndrology Consultant\b",
-    r"(?i)\bAndrology Expert\b",
-    r"(?i)\bMale Reproductive Specialist\b",
-    r"(?i)\bMen’s Health Specialist\b",
-    r"(?i)\bMale Fertility Doctor\b",
-    r"(?i)\bAndrology Researcher\b",
+    r"\bAndrologist\b",
+    r"\bAndrology Specialist\b",
+    r"\bAndrology Doctor\b",
+    r"\bAndrology Consultant\b",
+    r"\bAndrology Expert\b",
+    r"\bMale Reproductive Specialist\b",
+    r"\bMen’s Health Specialist\b",
+    r"\bMale Fertility Doctor\b",
+    r"\bAndrology Researcher\b",
 ]
 
 # Exact matches that should be updated

@@ -8,18 +8,18 @@ from termcolor import colored
 # Define regex patterns for Cardiologist related titles
 
 cardiologist_variants = [
-    r"(?i)\bCardiologist\b",
-    r"(?i)\bHeart\s?Specialist\b",
-    r"(?i)\bCardiovascular\s?Physician\b",
-    r"(?i)\bHeart\s?Doctor\b",
-    r"(?i)\bCardiology\s?Specialist\b",
-    r"(?i)\bCardiology\s?Physician\b",
-    r"(?i)\bDoctor\s?of\s?Cardiology\b",
-    r"(?i)\bCardiologist\s?Expert\b",
-    r"(?i)\bCardiology\s?Expert\b",
-    r"(?i)\bCardiolog\s?Expert\b",
-    r"(?i)\bCardiologia Y Estetica\b",
-    r"(?i)\bHead Preventive Cardiology\b",
+    r"\bCardiologist\b",
+    r"\bHeart\s?Specialist\b",
+    r"\bCardiovascular\s?Physician\b",
+    r"\bHeart\s?Doctor\b",
+    r"\bCardiology\s?Specialist\b",
+    r"\bCardiology\s?Physician\b",
+    r"\bDoctor\s?of\s?Cardiology\b",
+    r"\bCardiologist\s?Expert\b",
+    r"\bCardiology\s?Expert\b",
+    r"\bCardiolog\s?Expert\b",
+    r"\bCardiologia Y Estetica\b",
+    r"\bHead Preventive Cardiology\b",
 ]
 
 # Exact matches that should be updated

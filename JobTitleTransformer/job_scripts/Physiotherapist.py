@@ -9,44 +9,44 @@ from termcolor import colored
 
 physiotherapist_variants = [
     # Standard Titles & Variants
-    r"(?i)\bPhysiotherapist\b",
-    r"(?i)\bPhysical Therapist\b",
-    r"(?i)\bPhysiotherapy Specialist\b",
-    r"(?i)\bPhysiotherapist Specialist\b",
-    r"(?i)\bPhysiotherapist Practitioner\b",
-    r"(?i)\bPhysical Therapy Specialist\b",
-    r"(?i)\bPhysiapist\b",
-    r"(?i)\bHealth Therapist\b",
-    r"(?i)\bFisioterapia Dermatofuncional E Gestora De Clinica\b",
-    r"(?i)\bPhysiology\b",
+    r"\bPhysiotherapist\b",
+    r"\bPhysical Therapist\b",
+    r"\bPhysiotherapy Specialist\b",
+    r"\bPhysiotherapist Specialist\b",
+    r"\bPhysiotherapist Practitioner\b",
+    r"\bPhysical Therapy Specialist\b",
+    r"\bPhysiapist\b",
+    r"\bHealth Therapist\b",
+    r"\bFisioterapia Dermatofuncional E Gestora De Clinica\b",
+    r"\bPhysiology\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bPhysiotherpist\b",
-    r"(?i)\bPhysiotherapis\b",
-    r"(?i)\bPhysiotherapst\b",
-    r"(?i)\bPhysiotheraprist\b",
-    r"(?i)\bPhysioterapist\b",
-    r"(?i)\bPhysiotherpist\b",
+    r"\bPhysiotherpist\b",
+    r"\bPhysiotherapis\b",
+    r"\bPhysiotherapst\b",
+    r"\bPhysiotheraprist\b",
+    r"\bPhysioterapist\b",
+    r"\bPhysiotherpist\b",
 
     # Case Variations
-    r"(?i)\bphysiotherapist\b",
-    r"(?i)\bPHYSIOTHERAPIST\b",
-    r"(?i)\bPhYsIoThErApIsT\b",
-    r"(?i)\bPhysiotherapist\b",
+    r"\bphysiotherapist\b",
+    r"\bPHYSIOTHERAPIST\b",
+    r"\bPhYsIoThErApIsT\b",
+    r"\bPhysiotherapist\b",
 
     # Spanish Variants
-    r"(?i)\bFisioterapeuta\b",
-    r"(?i)\bTerapeuta Físico\b",
-    r"(?i)\bEspecialista en Fisioterapia\b",
-    r"(?i)\bFisioterapeuta Especialista\b",
-    r"(?i)\bFisioterapeuta Clínico\b",
-    r"(?i)\bFisioterapeuta Profesional\b",
+    r"\bFisioterapeuta\b",
+    r"\bTerapeuta Físico\b",
+    r"\bEspecialista en Fisioterapia\b",
+    r"\bFisioterapeuta Especialista\b",
+    r"\bFisioterapeuta Clínico\b",
+    r"\bFisioterapeuta Profesional\b",
 
     # Other Possible Variations
-    r"(?i)\bPhysical Rehabilitation Specialist\b",
-    r"(?i)\bPhysical Therapy Professional\b",
-    r"(?i)\bRehabilitation Therapist\b",
-    r"(?i)\bPhysical Care Specialist\b",
+    r"\bPhysical Rehabilitation Specialist\b",
+    r"\bPhysical Therapy Professional\b",
+    r"\bRehabilitation Therapist\b",
+    r"\bPhysical Care Specialist\b",
 ]
 
 # Exact matches that should be updated

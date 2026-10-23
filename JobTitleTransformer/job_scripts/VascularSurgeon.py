@@ -9,46 +9,46 @@ from termcolor import colored
 
 vascular_variants = [
     # Standard Titles & Variants
-    r"(?i)\bVascular Surgeon\b",  # General term for Vascular Surgeon
-    r"(?i)\bVascular Specialist\b",  # Variant term for vascular specialists
-    r"(?i)\bVein Specialist\b",  # Specialist focusing on veins
-    r"(?i)\bArterial Specialist\b",  # Specialist focusing on arteries
-    r"(?i)\bBlood Vessel Surgeon\b",  # Alternative term for vascular surgeon
+    r"\bVascular Surgeon\b",  # General term for Vascular Surgeon
+    r"\bVascular Specialist\b",  # Variant term for vascular specialists
+    r"\bVein Specialist\b",  # Specialist focusing on veins
+    r"\bArterial Specialist\b",  # Specialist focusing on arteries
+    r"\bBlood Vessel Surgeon\b",  # Alternative term for vascular surgeon
 
     # Misspellings & Typographical Errors
-    r"(?i)\bVascualr Surgeon\b",  # Common misspelling
-    r"(?i)\bVaskular Surgeon\b",  # Typo swapping letters
-    r"(?i)\bVasular Surgeon\b",  # Missing one 'c'
-    r"(?i)\bVascular Surgeoon\b",  # Double 'o' mistake
-    r"(?i)\bVasculer Surgeon\b",  # Common typo with 'e' instead of 'a'
+    r"\bVascualr Surgeon\b",  # Common misspelling
+    r"\bVaskular Surgeon\b",  # Typo swapping letters
+    r"\bVasular Surgeon\b",  # Missing one 'c'
+    r"\bVascular Surgeoon\b",  # Double 'o' mistake
+    r"\bVasculer Surgeon\b",  # Common typo with 'e' instead of 'a'
 
     # Case Variations
-    r"(?i)\bVASCULAR SURGEON\b",  # Uppercase variant
-    r"(?i)\bvascular surgeon\b",  # Lowercase variant
-    r"(?i)\bVaScUlAr SuRgEoN\b",  # Mixed case variant
+    r"\bVASCULAR SURGEON\b",  # Uppercase variant
+    r"\bvascular surgeon\b",  # Lowercase variant
+    r"\bVaScUlAr SuRgEoN\b",  # Mixed case variant
 
     # Spanish Variants
-    r"(?i)\bCirujano Vascular\b",  # Vascular Surgeon in Spanish
-    r"(?i)\bEspecialista en Vasos Sanguíneos\b",  # Blood Vessel Specialist in Spanish
-    r"(?i)\bEspecialista en Venas\b",  # Vein Specialist in Spanish
-    r"(?i)\bEspecialista en Arterias\b",  # Arterial Specialist in Spanish
-    r"(?i)\bCirujano de Arterias y Venas\b",  # Arteries and Veins Surgeon in Spanish
+    r"\bCirujano Vascular\b",  # Vascular Surgeon in Spanish
+    r"\bEspecialista en Vasos Sanguíneos\b",  # Blood Vessel Specialist in Spanish
+    r"\bEspecialista en Venas\b",  # Vein Specialist in Spanish
+    r"\bEspecialista en Arterias\b",  # Arterial Specialist in Spanish
+    r"\bCirujano de Arterias y Venas\b",  # Arteries and Veins Surgeon in Spanish
 
     # Hybrid Spanish-English Variants
-    r"(?i)\bVascular Surgeon Cirujano Vascular\b",  # Hybrid term
-    r"(?i)\bVein Specialist Cirujano de Venas\b",  # Hybrid term
+    r"\bVascular Surgeon Cirujano Vascular\b",  # Hybrid term
+    r"\bVein Specialist Cirujano de Venas\b",  # Hybrid term
 
     # Other Possible Variations (Doctor Forms, Specialist Forms)
-    r"(?i)\bArterial Surgeon\b",  # Arterial-focused surgeon
-    r"(?i)\bVein Surgeon\b",  # Vein-focused surgeon
-    r"(?i)\bPeripheral Vascular Surgeon\b",  # Specialist in peripheral vascular surgery
-    r"(?i)\bConsultantVascular Surgery\b",
-    r"(?i)\bVasc Surgery\b",
-    r"(?i)\bMd Vascular Surgery\b",
-    r"(?i)\bVascular Consultant\b",
-    r"(?i)\bVascular Medicine Specialist\b",
-    r"(?i)\bVascular Disease Doctor\b",
-    r"(?i)\bEndovascular Specialist\b",
+    r"\bArterial Surgeon\b",  # Arterial-focused surgeon
+    r"\bVein Surgeon\b",  # Vein-focused surgeon
+    r"\bPeripheral Vascular Surgeon\b",  # Specialist in peripheral vascular surgery
+    r"\bConsultantVascular Surgery\b",
+    r"\bVasc Surgery\b",
+    r"\bMd Vascular Surgery\b",
+    r"\bVascular Consultant\b",
+    r"\bVascular Medicine Specialist\b",
+    r"\bVascular Disease Doctor\b",
+    r"\bEndovascular Specialist\b",
 ]
 
 # Exact matches that should be updated

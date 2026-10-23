@@ -9,45 +9,45 @@ from termcolor import colored
 
 press_variants = [
     # Standard Titles & Variants
-    r"(?i)\bPress\b",
-    r"(?i)\bMedia\b",
-    r"(?i)\bPublic Relations\b",
-    r"(?i)\bPR\b",
-    r"(?i)\bJournalist\b",
+    r"\bPress\b",
+    r"\bMedia\b",
+    r"\bPublic Relations\b",
+    r"\bPR\b",
+    r"\bJournalist\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bPess\b",
-    r"(?i)\bPrees\b",
-    r"(?i)\bPrss\b",
-    r"(?i)\bPresss\b",
+    r"\bPess\b",
+    r"\bPrees\b",
+    r"\bPrss\b",
+    r"\bPresss\b",
 
     # Case Variations
-    r"(?i)\bpress\b",
-    r"(?i)\bPRESS\b",
-    r"(?i)\bPrEsS\b",
+    r"\bpress\b",
+    r"\bPRESS\b",
+    r"\bPrEsS\b",
 
     # Spanish Variants
-    r"(?i)\bPrensa\b",
-    r"(?i)\bRelaciones Públicas\b",
-    r"(?i)\bComunicados de Prensa\b",
-    r"(?i)\bMedios de Comunicación\b",
-    r"(?i)\bDepartamento de Prensa\b",
+    r"\bPrensa\b",
+    r"\bRelaciones Públicas\b",
+    r"\bComunicados de Prensa\b",
+    r"\bMedios de Comunicación\b",
+    r"\bDepartamento de Prensa\b",
 
     # Other Possible Variations
-    r"(?i)\bPublic Relations Manager\b",
-    r"(?i)\bMedia Relations\b",
-    r"(?i)\bMedia Relations Specialist\b",
-    r"(?i)\bPress Officer\b",
-    r"(?i)\bCommunications\b",
-    r"(?i)\bDirectrice De La Rdaction\b",
-    r"(?i)\bAssistant Camera Operator\b",
-    r"(?i)\bVideo Ad\b",
-    r"(?i)\bEditor\b",
-    r"(?i)\bFeatures Editor\b",
-    r"(?i)\bGiornalista\b",
-    r"(?i)\bAuthor\b",
-    r"(?i)\bJournaliste\b",
-    r"(?i)\bTv Production\b",
+    r"\bPublic Relations Manager\b",
+    r"\bMedia Relations\b",
+    r"\bMedia Relations Specialist\b",
+    r"\bPress Officer\b",
+    r"\bCommunications\b",
+    r"\bDirectrice De La Rdaction\b",
+    r"\bAssistant Camera Operator\b",
+    r"\bVideo Ad\b",
+    r"\bEditor\b",
+    r"\bFeatures Editor\b",
+    r"\bGiornalista\b",
+    r"\bAuthor\b",
+    r"\bJournaliste\b",
+    r"\bTv Production\b",
 ]
 
 # Exact matches that should be updated

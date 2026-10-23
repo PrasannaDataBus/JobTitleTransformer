@@ -9,46 +9,46 @@ from termcolor import colored
 
 dental_assistant_variants = [
     # Standard title variations
-    r"(?i)\bDental\s?Assistant\b",
-    r"(?i)\bDental\s?Tech\b",
-    r"(?i)\bDental\s?Nurse\b",
-    r"(?i)\bDental\s?Hygienist\b",
-    r"(?i)\bOral\s?Health\s?Assistant\b",
-    r"(?i)\bDental\s?Support\s?Staff\b",
+    r"\bDental\s?Assistant\b",
+    r"\bDental\s?Tech\b",
+    r"\bDental\s?Nurse\b",
+    r"\bDental\s?Hygienist\b",
+    r"\bOral\s?Health\s?Assistant\b",
+    r"\bDental\s?Support\s?Staff\b",
 
     # Common misspellings and case mistakes
-    r"(?i)\bDentel\s?Assistant\b",
-    r"(?i)\bDantal\s?Assistant\b",
-    r"(?i)\bDentel\s?Tech\b",
-    r"(?i)\bDantal\s?Nurse\b",
+    r"\bDentel\s?Assistant\b",
+    r"\bDantal\s?Assistant\b",
+    r"\bDentel\s?Tech\b",
+    r"\bDantal\s?Nurse\b",
 
     # Variants in Spanish and other languages
-    r"(?i)\bAsistente\s?Dental\b",
-    r"(?i)\bAyudante\s?Dental\b",
-    r"(?i)\bAuxiliar\s?Dental\b",
-    r"(?i)\bTécnico\s?Dental\b",
-    r"(?i)\bHigienista\s?Dental\b",
+    r"\bAsistente\s?Dental\b",
+    r"\bAyudante\s?Dental\b",
+    r"\bAuxiliar\s?Dental\b",
+    r"\bTécnico\s?Dental\b",
+    r"\bHigienista\s?Dental\b",
 
     # Other possible variations
-    r"(?i)\bCertified\s?Dental\s?Assistant\b",
-    r"(?i)\bLicensed\s?Dental\s?Assistant\b",
-    r"(?i)\bRegistered\s?Dental\s?Assistant\b",
-    r"(?i)\bDental Assistant\b",
+    r"\bCertified\s?Dental\s?Assistant\b",
+    r"\bLicensed\s?Dental\s?Assistant\b",
+    r"\bRegistered\s?Dental\s?Assistant\b",
+    r"\bDental Assistant\b",
 ]
 
 # Exact matches that should be updated
 dental_assistant_exact_matches = {
-    r"(?i)\bDentel\s?Assistant\b",
-    r"(?i)\bDantal\s?Assistant\b",
-    r"(?i)\bDentel\s?Tech\b",
-    r"(?i)\bDantal\s?Nurse\b",
-    r"(?i)\bAsistente\s?Dental\b",
-    r"(?i)\bAyudante\s?Dental\b",
-    r"(?i)\bAuxiliar\s?Dental\b",
-    r"(?i)\bTécnico\s?Dental\b",
-    r"(?i)\bHigienista\s?Dental\b",
-    r"(?i)\bDental Clinic\b",
-    r"(?i)\bDental Service Assistant Chief\b",   
+    r"\bDentel\s?Assistant\b",
+    r"\bDantal\s?Assistant\b",
+    r"\bDentel\s?Tech\b",
+    r"\bDantal\s?Nurse\b",
+    r"\bAsistente\s?Dental\b",
+    r"\bAyudante\s?Dental\b",
+    r"\bAuxiliar\s?Dental\b",
+    r"\bTécnico\s?Dental\b",
+    r"\bHigienista\s?Dental\b",
+    r"\bDental Clinic\b",
+    r"\bDental Service Assistant Chief\b",   
 }
 
 # Define patterns (these should NOT be changed)

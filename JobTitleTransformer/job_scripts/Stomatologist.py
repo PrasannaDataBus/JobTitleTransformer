@@ -9,30 +9,30 @@ from termcolor import colored
 
 stomatologist_variants = [
     # Standard Titles & Variants
-    r"(?i)\bStomatologist\b",  # General term for Stomatologist
+    r"\bStomatologist\b",  # General term for Stomatologist
 
     # Misspellings & Typographical Errors
-    r"(?i)\bStomatoligist\b",  # Common misspelling
-    r"(?i)\bStomotologist\b",  # Typo with swapped letters
-    r"(?i)\bStomotoligist\b",  # Misspelling with typo and extra 'l'
-    r"(?i)\bStomatoligist\b",  # Extra 'i' in misspelling
-    r"(?i)\bStomatlogist\b",  # Misspelling with missing 'o'
+    r"\bStomatoligist\b",  # Common misspelling
+    r"\bStomotologist\b",  # Typo with swapped letters
+    r"\bStomotoligist\b",  # Misspelling with typo and extra 'l'
+    r"\bStomatoligist\b",  # Extra 'i' in misspelling
+    r"\bStomatlogist\b",  # Misspelling with missing 'o'
 
     # Case Variations
-    r"(?i)\bSTOMATOLOGIST\b",  # Uppercase variant
-    r"(?i)\bstomatologist\b",  # Lowercase variant
-    r"(?i)\bStOmAtOlOgIsT\b",  # Mixed case variant
+    r"\bSTOMATOLOGIST\b",  # Uppercase variant
+    r"\bstomatologist\b",  # Lowercase variant
+    r"\bStOmAtOlOgIsT\b",  # Mixed case variant
 
     # Spanish Variants
-    r"(?i)\bEstomatólogo\b",  # General term for Stomatologist in Spanish
+    r"\bEstomatólogo\b",  # General term for Stomatologist in Spanish
 
     # Hybrid Spanish-English Variants
-    r"(?i)\bStomatólogo Médico\b",  # Hybrid term
+    r"\bStomatólogo Médico\b",  # Hybrid term
 
     # Other Possible Variations (Doctor Forms, Specialist Forms)
-    r"(?i)\bOral Medicine & Pathology\b",
-    r"(?i)Stomatologue",
-    r"(?i)Stomatology",
+    r"\bOral Medicine & Pathology\b",
+    r"Stomatologue",
+    r"Stomatology",
 ]
 
 # Exact matches that should be updated

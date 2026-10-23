@@ -8,26 +8,26 @@ from termcolor import colored
 # Define regex patterns for Geriatrist related titles
 
 geriatrist_variants = [
-    r"(?i)\bGeriatrist\b",
+    r"\bGeriatrist\b",
 
     # Common misspellings and case errors
-    r"(?i)\bGeritrist\b",
-    r"(?i)\bGeriatrist\b",
-    r"(?i)\bGeriatirist\b",
-    r"(?i)\bGeriatrician\b",
+    r"\bGeritrist\b",
+    r"\bGeriatrist\b",
+    r"\bGeriatirist\b",
+    r"\bGeriatrician\b",
 
     # Spanish variants
-    r"(?i)\bGeriatra\b",
-    r"(?i)\bEspecialista\s?en\s?Geriatría\b",
-    r"(?i)\bMédico\s?Geriatra\b",
+    r"\bGeriatra\b",
+    r"\bEspecialista\s?en\s?Geriatría\b",
+    r"\bMédico\s?Geriatra\b",
 
     # Other possible variations
-    r"(?i)\bDoctor\s?Geriatrist\b",
-    r"(?i)\bDoctor\s?en\s?Geriatría\b",
-    r"(?i)\bGeriatric\s?Specialist\b",
-    r"(?i)\bGeriatric\s?Physician\b",
-    r"(?i)\bLicensed\s?Geriatrist\b",
-    r"(?i)Geriatrics",
+    r"\bDoctor\s?Geriatrist\b",
+    r"\bDoctor\s?en\s?Geriatría\b",
+    r"\bGeriatric\s?Specialist\b",
+    r"\bGeriatric\s?Physician\b",
+    r"\bLicensed\s?Geriatrist\b",
+    r"Geriatrics",
 ]
 
 # Exact matches that should be updated

@@ -8,24 +8,24 @@ from termcolor import colored
 # Define regex patterns for Genetician related titles
 
 genetician_variants = [
-    r"(?i)\bGenetician\b",
-    r"(?i)\bGenetician\s?Specialist\b",
-    r"(?i)\bBoard\s?Certified\s?Genetician\b",
-    r"(?i)\bCertified\s?Genetician\b",
+    r"\bGenetician\b",
+    r"\bGenetician\s?Specialist\b",
+    r"\bBoard\s?Certified\s?Genetician\b",
+    r"\bCertified\s?Genetician\b",
 
     # Spanish variants
-    r"(?i)\bGenetista\b",
-    r"(?i)\bEspecialista\s?en\s?Genética\b",
-    r"(?i)\bGenetista\s?Médico\b",
+    r"\bGenetista\b",
+    r"\bEspecialista\s?en\s?Genética\b",
+    r"\bGenetista\s?Médico\b",
 
     # Other possible variations
-    r"(?i)\bDoctor\s?Genetician\b",
-    r"(?i)\bDoctor\s?en\s?Genética\b",
-    r"(?i)\bGenetics\s?Specialist\b",
-    r"(?i)\bGenetics\s?Doctor\b",
-    r"(?i)\bGenetic\s?Physician\b",
-    r"(?i)\bLicensed\s?Genetician\b",
-    r"(?i)\bGeneticista\b",
+    r"\bDoctor\s?Genetician\b",
+    r"\bDoctor\s?en\s?Genética\b",
+    r"\bGenetics\s?Specialist\b",
+    r"\bGenetics\s?Doctor\b",
+    r"\bGenetic\s?Physician\b",
+    r"\bLicensed\s?Genetician\b",
+    r"\bGeneticista\b",
 ]
 
 # Exact matches that should be updated

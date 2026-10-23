@@ -9,45 +9,45 @@ from termcolor import colored
 
 psychotherapist_variants = [
     # Standard Titles & Variants
-    r"(?i)\bPsychotherapist\b",
-    r"(?i)\bLicensed Psychotherapist\b",
-    r"(?i)\bMental Health Therapist\b",
-    r"(?i)\bCounselor\b",
-    r"(?i)\bClinical Psychotherapist\b",
-    r"(?i)\bPsychapist\b",
+    r"\bPsychotherapist\b",
+    r"\bLicensed Psychotherapist\b",
+    r"\bMental Health Therapist\b",
+    r"\bCounselor\b",
+    r"\bClinical Psychotherapist\b",
+    r"\bPsychapist\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bPsychotherpist\b",
-    r"(?i)\bPsychotherpistt\b",
-    r"(?i)\bPsycotherapist\b",
-    r"(?i)\bPsychotheripist\b",
-    r"(?i)\bPsychotherist\b",
-    r"(?i)\bPsychotheraist\b",
-    r"(?i)\bPsycotherapist\b",
+    r"\bPsychotherpist\b",
+    r"\bPsychotherpistt\b",
+    r"\bPsycotherapist\b",
+    r"\bPsychotheripist\b",
+    r"\bPsychotherist\b",
+    r"\bPsychotheraist\b",
+    r"\bPsycotherapist\b",
 
     # Case Variations
-    r"(?i)\bPSYCHOTHERAPIST\b",
-    r"(?i)\bpsychotherapist\b",
-    r"(?i)\bPyScHoThErApIsT\b",
+    r"\bPSYCHOTHERAPIST\b",
+    r"\bpsychotherapist\b",
+    r"\bPyScHoThErApIsT\b",
 
     # Spanish Variants
-    r"(?i)\bPsicoterapeuta\b",
-    r"(?i)\bPsicoterapeuta Clínico\b",
-    r"(?i)\bPsicoterapeuta Licenciado\b",
-    r"(?i)\bConsejero\b",
-    r"(?i)\bPsicoterapeuta de la Salud Mental\b",
+    r"\bPsicoterapeuta\b",
+    r"\bPsicoterapeuta Clínico\b",
+    r"\bPsicoterapeuta Licenciado\b",
+    r"\bConsejero\b",
+    r"\bPsicoterapeuta de la Salud Mental\b",
 
     # Hybrid Spanish-English Variants
-    r"(?i)\bPsicotherapist\b",
-    r"(?i)\bPsycotherapist\b",
+    r"\bPsicotherapist\b",
+    r"\bPsycotherapist\b",
 
     # Other Possible Variations (Doctor Forms, Specialist Forms)
-    r"(?i)\bMental Health Counselor\b",
-    r"(?i)\bMarriage and Family Therapist\b",
-    r"(?i)\bCounseling Psychotherapist\b",
-    r"(?i)\bClinical Therapist\b",
-    r"(?i)\bPsychiatric Therapist\b",
-    r"(?i)\bLicensed Clinical Social Worker\b",
+    r"\bMental Health Counselor\b",
+    r"\bMarriage and Family Therapist\b",
+    r"\bCounseling Psychotherapist\b",
+    r"\bClinical Therapist\b",
+    r"\bPsychiatric Therapist\b",
+    r"\bLicensed Clinical Social Worker\b",
 ]
 
 # Exact matches that should be updated

@@ -8,39 +8,39 @@ from termcolor import colored
 # Define regex patterns for Licensed Practical Nurse (LPN) related titles
 
 LPN_variants = [
-    r"(?i)\bLicensed\s?Practical\s?Nurse\s?(LPN)?\b",
-    r"(?i)\bPractical\s?Nurse\s?(LPN)?\b"
-    r"(?i)\bLPN\b",
-    r"(?i)\bLicensed\s?Nurse\s?(LPN)?\b",
-    r"(?i)\b(LPN)\b",
-    r"(?i)\bNursing\s?Assistant\s?(LPN)?\b",
+    r"\bLicensed\s?Practical\s?Nurse\s?(LPN)?\b",
+    r"\bPractical\s?Nurse\s?(LPN)?\b"
+    r"\bLPN\b",
+    r"\bLicensed\s?Nurse\s?(LPN)?\b",
+    r"\b(LPN)\b",
+    r"\bNursing\s?Assistant\s?(LPN)?\b",
 
     # Misspellings and case errors
-    r"(?i)\bLicensd\s?Practical\s?Nurse\b",
-    r"(?i)\bLicsensed\s?Practical\s?Nurse\b",
-    r"(?i)\bLicensed\s?Pratical\s?Nurse\b",
-    r"(?i)\bLicenced\s?Practical\s?Nurse\b",
-    r"(?i)\bLicensed\s?Practical\s?Ners\b",
-    r"(?i)\bLiceneced\s?Practical\s?Nurse\b",
+    r"\bLicensd\s?Practical\s?Nurse\b",
+    r"\bLicsensed\s?Practical\s?Nurse\b",
+    r"\bLicensed\s?Pratical\s?Nurse\b",
+    r"\bLicenced\s?Practical\s?Nurse\b",
+    r"\bLicensed\s?Practical\s?Ners\b",
+    r"\bLiceneced\s?Practical\s?Nurse\b",
 
     # Spanish variants
-    r"(?i)\bEnfermero\s?Práctico\s?Licenciado\b",
-    r"(?i)\bEnfermera\s?Práctica\s?Licenciada\b",
-    r"(?i)\bEnfermero\s?Práctico\s?(LPN)?\b",
-    r"(?i)\bEnfermera\s?Práctica\s?(LPN)?\b",
-    r"(?i)\bAuxiliar\s?De\s?Enfermería\s?Licenciado\b",
+    r"\bEnfermero\s?Práctico\s?Licenciado\b",
+    r"\bEnfermera\s?Práctica\s?Licenciada\b",
+    r"\bEnfermero\s?Práctico\s?(LPN)?\b",
+    r"\bEnfermera\s?Práctica\s?(LPN)?\b",
+    r"\bAuxiliar\s?De\s?Enfermería\s?Licenciado\b",
 
     # Other possible variations
-    r"(?i)\bLicensed\s?Practical\s?Nursing\s?Assistant\b",
-    r"(?i)\bLPN\s?Assistant\b",
-    r"(?i)\bLicensed\s?Practical\s?Health\s?Assistant\b",
-    r"(?i)\bLPN\s?Nurse\b",
-    r"(?i)\bPractical\s?Nursing\s?Technician\b",
-    r"(?i)\bLPN\s?Technician\b",
-    r"(?i)\bPractical\s?Nurse\s?Technician\b",
+    r"\bLicensed\s?Practical\s?Nursing\s?Assistant\b",
+    r"\bLPN\s?Assistant\b",
+    r"\bLicensed\s?Practical\s?Health\s?Assistant\b",
+    r"\bLPN\s?Nurse\b",
+    r"\bPractical\s?Nursing\s?Technician\b",
+    r"\bLPN\s?Technician\b",
+    r"\bPractical\s?Nurse\s?Technician\b",
 
-    r"(?i)\bLPN\b",
-    r"(?i)\bLicensed Practical Nurse\b",
+    r"\bLPN\b",
+    r"\bLicensed Practical Nurse\b",
 ]
 
 # Exact matches that should be updated

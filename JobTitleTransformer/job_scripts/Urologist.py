@@ -9,44 +9,44 @@ from termcolor import colored
 
 urologist_variants = [
     # Standard Titles & Variants
-    r"(?i)\bUrologist\b",  # General term for Urologist
-    r"(?i)\bUrology Specialist\b",  # Alternative term for urologist
-    r"(?i)\bUrinary Tract Specialist\b",  # Specific to urinary tract care
-    r"(?i)\bKidney Specialist\b",  # Common term for urologist specializing in kidneys
-    r"(?i)\bBladder Specialist\b",  # Specialist focused on bladder
-    r"(?i)\bMale Reproductive Health Specialist\b",  # Urologists focusing on male reproductive health
+    r"\bUrologist\b",  # General term for Urologist
+    r"\bUrology Specialist\b",  # Alternative term for urologist
+    r"\bUrinary Tract Specialist\b",  # Specific to urinary tract care
+    r"\bKidney Specialist\b",  # Common term for urologist specializing in kidneys
+    r"\bBladder Specialist\b",  # Specialist focused on bladder
+    r"\bMale Reproductive Health Specialist\b",  # Urologists focusing on male reproductive health
 
     # Misspellings & Typographical Errors
-    r"(?i)\bUrolgist\b",  # Common misspelling
-    r"(?i)\bUrolgist\b",  # Typo with missing 'o'
-    r"(?i)\bUroligist\b",  # Typo with extra 'i'
-    r"(?i)\bUrolgists\b",  # Plural form with typo
-    r"(?i)\bUroloist\b",  # Typo swapping 'g' and 'i'
+    r"\bUrolgist\b",  # Common misspelling
+    r"\bUrolgist\b",  # Typo with missing 'o'
+    r"\bUroligist\b",  # Typo with extra 'i'
+    r"\bUrolgists\b",  # Plural form with typo
+    r"\bUroloist\b",  # Typo swapping 'g' and 'i'
 
     # Case Variations
-    r"(?i)\bUROLOGIST\b",  # Uppercase variant
-    r"(?i)\burologist\b",  # Lowercase variant
-    r"(?i)\bUroLoGiSt\b",  # Mixed case variant
+    r"\bUROLOGIST\b",  # Uppercase variant
+    r"\burologist\b",  # Lowercase variant
+    r"\bUroLoGiSt\b",  # Mixed case variant
 
     # Spanish Variants
-    r"(?i)\bUrólogo\b",  # General term for Urologist in Spanish
-    r"(?i)\bEspecialista en Urología\b",  # Urology Specialist in Spanish
-    r"(?i)\bEspecialista en Tracto Urinario\b",  # Urinary Tract Specialist in Spanish
-    r"(?i)\bEspecialista en Riñón\b",  # Kidney Specialist in Spanish
-    r"(?i)\bEspecialista en Vejiga\b",  # Bladder Specialist in Spanish
-    r"(?i)\bEspecialista en Salud Reproductiva Masculina\b",  # Male Reproductive Health Specialist in Spanish
+    r"\bUrólogo\b",  # General term for Urologist in Spanish
+    r"\bEspecialista en Urología\b",  # Urology Specialist in Spanish
+    r"\bEspecialista en Tracto Urinario\b",  # Urinary Tract Specialist in Spanish
+    r"\bEspecialista en Riñón\b",  # Kidney Specialist in Spanish
+    r"\bEspecialista en Vejiga\b",  # Bladder Specialist in Spanish
+    r"\bEspecialista en Salud Reproductiva Masculina\b",  # Male Reproductive Health Specialist in Spanish
 
     # Hybrid Spanish-English Variants
-    r"(?i)\bUrologist Especialista en Urología\b",  # Hybrid term
-    r"(?i)\bUrólogo Kidney Specialist\b",  # Hybrid term
+    r"\bUrologist Especialista en Urología\b",  # Hybrid term
+    r"\bUrólogo Kidney Specialist\b",  # Hybrid term
 
     # Other Possible Variations (Doctor Forms, Specialist Forms)
-    r"(?i)\bUrinary Care Physician\b",  # Medical variant for urologist
-    r"(?i)\bReproductive Health Doctor\b",  # Specialist for reproductive health
-    r"(?i)\bBladder Surgeon\b",  # Surgeons focusing on bladder treatment
-    r"(?i)\bKidney Care Doctor\b",  # Variant focused on kidney care
-    r"(?i)\bConsultant Urological Surgeon\b",
-    r"(?i)\bUrology\b",
+    r"\bUrinary Care Physician\b",  # Medical variant for urologist
+    r"\bReproductive Health Doctor\b",  # Specialist for reproductive health
+    r"\bBladder Surgeon\b",  # Surgeons focusing on bladder treatment
+    r"\bKidney Care Doctor\b",  # Variant focused on kidney care
+    r"\bConsultant Urological Surgeon\b",
+    r"\bUrology\b",
 ]
 
 # Exact matches that should be updated

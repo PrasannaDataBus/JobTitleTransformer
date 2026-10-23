@@ -9,40 +9,40 @@ from termcolor import colored
 
 orthodontist_variants = [
     # Standard Titles & Abbreviations
-    r"(?i)\bOrthodontist\b",
-    r"(?i)\bOrtho\b",
-    r"(?i)\bOrthodontic\s?Specialist\b",
-    r"(?i)\bDoctor\s?of\s?Orthodontics\b",
-    r"(?i)\bDDS\s?Orthodontics\b",
-    r"(?i)\bDMD\s?Orthodontics\b",
+    r"\bOrthodontist\b",
+    r"\bOrtho\b",
+    r"\bOrthodontic\s?Specialist\b",
+    r"\bDoctor\s?of\s?Orthodontics\b",
+    r"\bDDS\s?Orthodontics\b",
+    r"\bDMD\s?Orthodontics\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bOrthodentist\b",
-    r"(?i)\bOrthodonist\b",
-    r"(?i)\bOrthodantist\b",
-    r"(?i)\bOrhtodontist\b",
-    r"(?i)\bOrthodentics\b",
-    r"(?i)\bOrthodentis\b",
-    r"(?i)\bOrthodontics\s?Doctor\b",
+    r"\bOrthodentist\b",
+    r"\bOrthodonist\b",
+    r"\bOrthodantist\b",
+    r"\bOrhtodontist\b",
+    r"\bOrthodentics\b",
+    r"\bOrthodentis\b",
+    r"\bOrthodontics\s?Doctor\b",
 
     # Case Variations
-    r"(?i)\borthodontist\b",
-    r"(?i)\bOrthodontIst\b",
-    r"(?i)\bORTHODONTIST\b",
-    r"(?i)\bOrThOdOnTiSt\b",
+    r"\borthodontist\b",
+    r"\bOrthodontIst\b",
+    r"\bORTHODONTIST\b",
+    r"\bOrThOdOnTiSt\b",
 
     # Spanish Variants
-    r"(?i)\bOrtodoncista\b",
-    r"(?i)\bDoctor\s?en\s?Ortodoncía\b",
-    r"(?i)\bEspecialista\s?en\s?Ortodoncía\b",
-    r"(?i)\bCirujano\s?Ortodoncista\b",
+    r"\bOrtodoncista\b",
+    r"\bDoctor\s?en\s?Ortodoncía\b",
+    r"\bEspecialista\s?en\s?Ortodoncía\b",
+    r"\bCirujano\s?Ortodoncista\b",
 
     # Other Possible Variations (Including Doctor forms, Specialist forms)
-    r"(?i)\bOrthodontic\s?Doctor\b",
-    r"(?i)\bOrthodontic\s?Surgeon\b",
-    r"(?i)\bOrthodontic\s?Practitioner\b",
-    r"(?i)\bSpecialist\s?in\s?Orthodontics\b",
-    r"(?i)\bOrthodontics\s?Expert\b",
+    r"\bOrthodontic\s?Doctor\b",
+    r"\bOrthodontic\s?Surgeon\b",
+    r"\bOrthodontic\s?Practitioner\b",
+    r"\bSpecialist\s?in\s?Orthodontics\b",
+    r"\bOrthodontics\s?Expert\b",
 ]
 
 # Exact matches that should be updated

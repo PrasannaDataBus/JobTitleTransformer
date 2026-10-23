@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='jobtitletransformer',  # Must be unique on PyPI
-    version='0.1.22',
-    packages=find_packages(), # include=["jobtitletransformer"]
+    version='0.1.23',
+    packages=find_packages(exclude=['tests', 'tests.*']), # include=["jobtitletransformer"]
     package_data={"JobTitleTransformer": ["job_scripts/*.py"]},
     install_requires=[
         'pandas',
@@ -26,6 +26,11 @@ setup(
     license='MIT',
     classifiers=[
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
         'Operating System :: OS Independent',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',

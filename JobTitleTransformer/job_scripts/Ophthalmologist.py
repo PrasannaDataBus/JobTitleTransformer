@@ -9,47 +9,47 @@ from termcolor import colored
 
 ophthalmologist_variants = [
     # Standard Titles & Abbreviations
-    r"(?i)\bOphthalmologist\b",
-    r"(?i)\bOphthalmology\s?Specialist\b",
-    r"(?i)\bEye\s?Specialist\b",
-    r"(?i)\bEye\s?Doctor\b",
-    r"(?i)\bOphthalmic\s?Surgeon\b",
-    r"(?i)\bOphthalmology\b",
+    r"\bOphthalmologist\b",
+    r"\bOphthalmology\s?Specialist\b",
+    r"\bEye\s?Specialist\b",
+    r"\bEye\s?Doctor\b",
+    r"\bOphthalmic\s?Surgeon\b",
+    r"\bOphthalmology\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bOpthalmologist\b",
-    r"(?i)\bOphtalmologist\b",
-    r"(?i)\bOphthomologist\b",
-    r"(?i)\bOphthalmologis\b",
-    r"(?i)\bOpthomoligist\b",
-    r"(?i)\bOphthalmalogist\b",
-    r"(?i)\bOphthalmoloist\b",
+    r"\bOpthalmologist\b",
+    r"\bOphtalmologist\b",
+    r"\bOphthomologist\b",
+    r"\bOphthalmologis\b",
+    r"\bOpthomoligist\b",
+    r"\bOphthalmalogist\b",
+    r"\bOphthalmoloist\b",
 
     # Case Variations
-    r"(?i)\bophthalmologist\b",
-    r"(?i)\bOphthalmologist\b",
-    r"(?i)\bOPHTHALMOLOGIST\b",
-    r"(?i)\bOphthaLmologist\b",
+    r"\bophthalmologist\b",
+    r"\bOphthalmologist\b",
+    r"\bOPHTHALMOLOGIST\b",
+    r"\bOphthaLmologist\b",
 
     # Spanish Variants
-    r"(?i)\bOftalmólogo\b",
-    r"(?i)\bMédico\s?Oftalmólogo\b",
-    r"(?i)\bEspecialista\s?en\s?Oftalmología\b",
-    r"(?i)\bOftalmólogo\s?Médico\b",
-    r"(?i)\bOftalmólogo\s?Quirúrgico\b",
-    r"(?i)\bOftalmólogo\s?Pediátrico\b",
-    r"(?i)\bOftalmólogo\s?Clínico\b",
+    r"\bOftalmólogo\b",
+    r"\bMédico\s?Oftalmólogo\b",
+    r"\bEspecialista\s?en\s?Oftalmología\b",
+    r"\bOftalmólogo\s?Médico\b",
+    r"\bOftalmólogo\s?Quirúrgico\b",
+    r"\bOftalmólogo\s?Pediátrico\b",
+    r"\bOftalmólogo\s?Clínico\b",
 
     # Other Possible Variations (Including Doctor forms, Specialist forms)
-    r"(?i)\bEye\s?Doctor\b",
-    r"(?i)\bOphthalmic\s?Physician\b",
-    r"(?i)\bOphthalmic\s?Specialist\b",
-    r"(?i)\bOptometrist\b",  # Can be confused with Ophthalmologists in some regions
-    r"(?i)\bVision\s?Specialist\b",
-    r"(?i)\bOfthalmology\b",
-    r"(?i)\bOphthalmogist\b",
-    r"(?i)\bOphthalmolohist\b",
-    r"(?i)\bOftalmologia\b",
+    r"\bEye\s?Doctor\b",
+    r"\bOphthalmic\s?Physician\b",
+    r"\bOphthalmic\s?Specialist\b",
+    r"\bOptometrist\b",  # Can be confused with Ophthalmologists in some regions
+    r"\bVision\s?Specialist\b",
+    r"\bOfthalmology\b",
+    r"\bOphthalmogist\b",
+    r"\bOphthalmolohist\b",
+    r"\bOftalmologia\b",
 ]
 
 # Exact matches that should be updated

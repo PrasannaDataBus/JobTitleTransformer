@@ -9,51 +9,51 @@ from termcolor import colored
 
 psychiatrist_variants = [
     # Standard Titles & Variants
-    r"(?i)\bPsychiatrist\b",
-    r"(?i)\bPsychiatric Doctor\b",
-    r"(?i)\bDoctor of Psychiatry\b",
-    r"(?i)\bMD Psychiatry\b",
-    r"(?i)\bMental Health Doctor\b",
-    r"(?i)\bPsychiatry Specialist\b",
-    r"(?i)\bPsychiatry\b",
-    r"(?i)\bEating Disorders\b",
+    r"\bPsychiatrist\b",
+    r"\bPsychiatric Doctor\b",
+    r"\bDoctor of Psychiatry\b",
+    r"\bMD Psychiatry\b",
+    r"\bMental Health Doctor\b",
+    r"\bPsychiatry Specialist\b",
+    r"\bPsychiatry\b",
+    r"\bEating Disorders\b",
 
     # Misspellings & Typographical Errors
-    r"(?i)\bPsychaitrist\b",
-    r"(?i)\bPsychiatristt\b",
-    r"(?i)\bPsychitrist\b",
-    r"(?i)\bPsyciatrist\b",
-    r"(?i)\bPsychyatrist\b",
-    r"(?i)\bPsychaitric Doctor\b",
-    r"(?i)\bPsychitric Doctor\b",
-    r"(?i)\bPsycatrist\b",
-    r"(?i)\bPsychatrist\b",
-    r"(?i)\bPsichiatrist\b",
+    r"\bPsychaitrist\b",
+    r"\bPsychiatristt\b",
+    r"\bPsychitrist\b",
+    r"\bPsyciatrist\b",
+    r"\bPsychyatrist\b",
+    r"\bPsychaitric Doctor\b",
+    r"\bPsychitric Doctor\b",
+    r"\bPsycatrist\b",
+    r"\bPsychatrist\b",
+    r"\bPsichiatrist\b",
 
     # Case Variations
-    r"(?i)\bPSYCHIATRIST\b",
-    r"(?i)\bpsychiatrist\b",
-    r"(?i)\bPsYcHiAtRiSt\b",
+    r"\bPSYCHIATRIST\b",
+    r"\bpsychiatrist\b",
+    r"\bPsYcHiAtRiSt\b",
 
     # Spanish Variants
-    r"(?i)\bPsiquiatra\b",
-    r"(?i)\bDoctor en Psiquiatría\b",
-    r"(?i)\bEspecialista en Psiquiatría\b",
-    r"(?i)\bMédico Psiquiatra\b",
-    r"(?i)\bMD Psiquiatría\b",
+    r"\bPsiquiatra\b",
+    r"\bDoctor en Psiquiatría\b",
+    r"\bEspecialista en Psiquiatría\b",
+    r"\bMédico Psiquiatra\b",
+    r"\bMD Psiquiatría\b",
 
     # Hybrid Spanish-English Variants
-    r"(?i)\bPsiquiatrist\b",
-    r"(?i)\bPsychiatra\b",
+    r"\bPsiquiatrist\b",
+    r"\bPsychiatra\b",
 
     # Other Possible Variations (Doctor Forms, Specialist Forms)
-    r"(?i)\bConsultant Psychiatrist\b",
-    r"(?i)\bSenior Psychiatrist\b",
-    r"(?i)\bLead Psychiatrist\b",
-    r"(?i)\bForensic Psychiatrist\b",
-    r"(?i)\bChild Psychiatrist\b",
-    r"(?i)\bGeriatric Psychiatrist\b",
-    r"(?i)\bNeuropsychiatrist\b",
+    r"\bConsultant Psychiatrist\b",
+    r"\bSenior Psychiatrist\b",
+    r"\bLead Psychiatrist\b",
+    r"\bForensic Psychiatrist\b",
+    r"\bChild Psychiatrist\b",
+    r"\bGeriatric Psychiatrist\b",
+    r"\bNeuropsychiatrist\b",
 ]
 
 # Exact matches that should be updated
