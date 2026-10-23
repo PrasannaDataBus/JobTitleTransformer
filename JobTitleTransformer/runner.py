@@ -1,7 +1,4 @@
-import os
-from termcolor import colored
-import pkg_resources
-import pandas as pd
+from importlib.resources import files
 
 
 def run_pipeline(df):
