@@ -20,7 +20,7 @@ setup(
     author='Prasanna UTHAMARAJ',
     author_email='prasannadatabuss@gmail.com',  # Optional but nice
     description='A healthcare-focused job title transformation pipeline.',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/PrasannaDataBus/JobTitleTransformer',
     license='MIT',
