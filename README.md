@@ -30,10 +30,12 @@ pip install jobtitletransformer
 ```
 
 > ⚠️ Requirements: 
-> * Python 3.8+
+> * Python 3.9+
 > * pandas
 > * sentence-transformers
 > * faiss-cpu
+
+All dependencies install automatically with pip install jobtitletransformer
 
 --- 
 
@@ -58,7 +60,8 @@ print("JobTitleTransformer found at:", spec.origin if spec else "NOT FOUND")
 
 # Import the core package
 
-import jobtitletransformer
+import JobTitleTransformer  # note: the import name is case-sensitive
+
 print("JobTitleTransformer loaded from:", JobTitleTransformer.__file__)
 
 # Data Ingestion
@@ -83,7 +86,7 @@ df = raw_data.rename(columns={"job_title": "speciality"}).copy()
 # The engine will sequentially execute RegEx dictionaries -> SBERT embeddings -> FAISS matching.
 # It prints CLI diagnostics during execution and returns the fully normalized dataframe.
 
-enriched_df = jobtitletransformer.run_pipeline(df)
+enriched_df = JobTitleTransformer.run_pipeline(df)
 ```
 
 🧠 Author & Maintainer

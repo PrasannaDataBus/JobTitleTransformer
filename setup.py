@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='jobtitletransformer',  # Must be unique on PyPI
-    version='0.1.21',
+    version='0.1.22',
     packages=find_packages(), # include=["jobtitletransformer"]
     package_data={"JobTitleTransformer": ["job_scripts/*.py"]},
     install_requires=[
@@ -10,6 +10,7 @@ setup(
         'numpy',
         'nltk',
         'termcolor',
+        'unidecode',
         'tabulate',
         "scikit-learn",
         "sentence-transformers",
@@ -27,12 +28,9 @@ setup(
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License'
+        'License :: OSI Approved :: MIT License',
+        'Topic :: Text Processing :: Linguistic',
+        'Intended Audience :: Healthcare Industry'
     ],
-    python_requires='>=3.7',
-    entry_points={
-        'console_scripts': [
-            'jobtitle-transformer = JobTitleTransformer.runner:run_pipeline',
-        ],
-    }
+    python_requires='>=3.9'
 )

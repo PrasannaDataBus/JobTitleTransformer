@@ -107,7 +107,6 @@ dermatologist_exact_matches = {
     'Dermato-Venereologist',
     'Consultants Dermatology',
     'Dermatology Consultant',
-    'Fabia valente',
 }
 
 # Define patterns (these should NOT be changed)
