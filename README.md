@@ -2,26 +2,25 @@
 
 [![CI](https://github.com/PrasannaDataBus/JobTitleTransformer/actions/workflows/ci.yml/badge.svg)](https://github.com/PrasannaDataBus/JobTitleTransformer/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/jobtitletransformer)](https://pypi.org/project/jobtitletransformer/) [![Python](https://img.shields.io/pypi/pyversions/jobtitletransformer)](https://pypi.org/project/jobtitletransformer/)
 
-**JobTitleTransformer** is an enterprise-grade, hybrid `NLP pipeline` designed to ingest, sanitize, and normalize highly unstructured, multi-lingual healthcare job titles into a standardized corporate taxonomy. 
+**JobTitleTransformer** is a hybrid `NLP pipeline` that ingests, sanitizes and normalizes highly unstructured, multilingual healthcare job titles into a standardized taxonomy of 100 labels.
 
-Built for seamless integration into broader `ETL workflows`, this library ensures high-quality `Data Modeling` for `Downstream Platforms` , including `Data Lakes`, `Data Hubs`, `Data Warehouses`, `Data Marts`, and `Semantic Models`.
+Built for `ETL workflows`, it delivers high-quality `Data Modeling` for downstream platforms such as `Data Lakes`, `Data Hubs`, `Data Warehouses`, `Data Marts` and `Semantic Models`.
 
-## 🏗️ Pipeline Architecture
+```python
+import JobTitleTransformer as jtt
 
-The transformation engine operates in a deterministic-to-probabilistic cascading sequence to balance execution speed with high recall:
+jtt.normalize_title("Dermatologue")        # 'Dermatologist'
+jtt.normalize_title("Cirujano Plastico")   # 'Plastic Surgeon'
+jtt.normalize_title("dermatogist")         # 'Dermatologist'
+```
 
-1. **Vectorized Text Preprocessing:** Utilizes Pandas vectorized string operations for high-performance HTML entity decoding (`html.unescape`), Unicode normalization (`NFKD`), and automated noise/garbage character removal via compiled Regular Expressions.
+## ✨ Highlights
 
-
-2. **Deterministic Rules Engine:** Executes 100+ modular taxonomy scripts utilizing exact-match dictionary hashing and complex RegEx patterns for rapid, precise mapping of known variants, typos, and edge cases.
-
-
-3. **Machine Learning Semantic Search (Fallback):** Unmatched string records are passed to an `AI fallback layer`. The pipeline generates vector embeddings using SBERT (`all-MiniLM-L6-v2`) and performs an L2 distance vector search via `Facebook AI Similarity Search (FAISS)` to semantically map unmatched job titles to the closest valid business category.
-
-
-4. **Automated Data Integrity Gates:** Implements strict pre- and post-execution dataframe row-count validations to guarantee idempotency and zero data loss during transformations.
-
-> ⚠️ Domain Constraint:** The taxonomy dictionary and ML embeddings are strictly optimized for the **Healthcare and Medical sectors**. 
+* **95 curated rule modules** with ~4,000 RegEx patterns, ~4,200 exact matches and ~2,300 exclusions for spellings, typos, abbreviations and translations (English, French, Spanish, Portuguese, Turkish, Indonesian and more).
+* **Semantic fallback** with SBERT embeddings and FAISS search for titles the rules have never seen.
+* **Explainable output:** every row says how it was matched (`rules`, `semantic`, `placeholder` or `unmatched`).
+* **Safe by design:** the input is never modified, row order and index are preserved, and no row is ever dropped.
+* **Works with any DataFrame and any column name**, a pandas Series, a list, or a single string.
 
 ---
 
@@ -31,75 +30,97 @@ The transformation engine operates in a deterministic-to-probabilistic cascading
 pip install jobtitletransformer
 ```
 
-> ⚠️ Requirements: 
-> * Python 3.9+
-> * pandas
-> * sentence-transformers
-> * faiss-cpu
+Requires Python 3.9+. All dependencies, including `sentence-transformers` and `faiss-cpu` for the semantic stage, install automatically. The embedding model is downloaded on first use.
 
-All dependencies install automatically with pip install jobtitletransformer
+---
 
---- 
+## 🚀 Quickstart
 
-## 🚀 Integration & Usage
-
-**Critical Dataframe Contract:** This library currently expects the input dataframe to be instantiated as df and the target text column to be explicitly named speciality.
-
-```bash
-# Environment & Installation Diagnostics
-# The following checks verify that the package is correctly installed 
-# and accessible within your active Python environment.
-
-import sys
-import importlib.util
-
-print("sys.path:", sys.path)
-
-# Verify the package specification exists before attempting import
-
-spec = importlib.util.find_spec("JobTitleTransformer")
-print("JobTitleTransformer found at:", spec.origin if spec else "NOT FOUND")
-
-# Import the core package
-
-import JobTitleTransformer  # note: the import name is case-sensitive
-
-print("JobTitleTransformer loaded from:", JobTitleTransformer.__file__)
-
-# Data Ingestion
-
+```python
 import pandas as pd
+import JobTitleTransformer as jtt
 
-# Load your raw dataset. 
-# Note: This can be adapted for SQL queries, JSON, or any Pandas-supported format.
+contacts = pd.read_csv("contacts.csv")
 
-raw_data = pd.read_csv("raw_healthcare_contacts.csv")
-
-# Schema Enforcement
-# The pipeline relies on a strict schema contract: 
-# The dataframe must be named 'df' and the target column must be 'speciality'.
-# We append .copy() to ensure we are working with a fresh dataframe in memory 
-# and to prevent Pandas 'SettingWithCopy' warnings downstream.
-
-df = raw_data.rename(columns={"job_title": "speciality"}).copy()
-
-# Pipeline Execution
-# Pass the dataframe into the transformation hub.
-# The engine will sequentially execute RegEx dictionaries -> SBERT embeddings -> FAISS matching.
-# It prints CLI diagnostics during execution and returns the fully normalized dataframe.
-
-enriched_df = JobTitleTransformer.run_pipeline(df)
+clean = jtt.normalize(contacts, column="job_title")
 ```
+
+`clean` is a copy of `contacts` with two new columns:
+
+| job_title | normalized_title | match_method |
+|---|---|---|
+| Dermatologue | Dermatologist | rules |
+| Plastic &amp;amp; Reconstructive Surgeon | Plastic and Reconstructive Surgeon | rules |
+| RN | Registered Nurse (RN) | rules |
+| Other | *None* | placeholder |
+| Longevity Doctor | *nearest taxonomy label* | semantic |
+
+| `match_method` | Meaning |
+|---|---|
+| `rules` | Matched by a curated rule: deterministic and explainable |
+| `semantic` | Matched by the SBERT + FAISS fallback: worth reviewing |
+| `placeholder` | Not a job title ("Other", "-", bare numbers…), left empty on purpose |
+| `unmatched` | No confident match (semantic stage disabled or above the threshold) |
+
+### Options
+
+```python
+clean, report = jtt.normalize(
+    contacts,
+    column="job_title",
+    semantic=True,              # use the SBERT + FAISS fallback (default)
+    semantic_threshold=None,    # max L2 distance to accept a semantic match; None = always take the nearest
+    review="none",              # "interactive" prints semantic matches and asks for confirmation
+    verbose=False,              # True shows the rule engine's detailed diagnostics
+    return_report=True,
+)
+
+print(report)                   # counts per match method
+report.semantic_matches         # DataFrame of original → normalized semantic matches, with counts
+report.unmatched                # titles that could not be matched
+```
+
+Use `semantic=False` for a fast, fully deterministic run with no model download.
+
+The 100 standard labels are available as `jtt.TAXONOMY_LABELS`.
+
+### Upgrading from `run_pipeline`
+
+`run_pipeline(df)` still works and now preserves row order, but it is deprecated. Replace it with:
+
+```python
+clean = jtt.normalize(df, column="speciality", review="interactive")
+```
+
+---
+
+## 🏗️ Pipeline Architecture
+
+The engine runs a deterministic-to-probabilistic cascade to balance speed, precision and recall:
+
+1. **Vectorized Text Preprocessing:** HTML entity decoding, Unicode normalization (`NFKD`, `unidecode`), whitespace and punctuation clean-up, and detection of placeholder values.
+
+2. **Deterministic Rules Engine:** 95 modular taxonomy scripts, executed in a fixed order, combine RegEx variants, exact-match dictionaries and exclusions for precise mapping of known variants, typos and edge cases.
+
+3. **Machine Learning Semantic Search (Fallback):** Titles the rules do not recognise are embedded with SBERT (`all-MiniLM-L6-v2`) and matched to the nearest taxonomy label with an L2 vector search in `FAISS`. An optional distance threshold keeps low-confidence matches out.
+
+4. **Data Integrity by Design:** every input row is tracked from start to finish, so the output always has exactly the same rows, in the same order, as the input.
+
+> ⚠️ **Domain constraint:** the taxonomy and rules are optimized for the **healthcare and medical sectors**.
+
+---
 
 ## 🧪 Testing
 
-The deterministic rule engine is covered by an automated test suite (known mappings, typos, multilingual variants, HTML entities, and row-preservation checks). GitHub Actions runs it on every pull request across Python 3.9–3.13 and verifies that the package builds.
+The rule engine, the public API and the FAISS search path are covered by an automated test suite. GitHub Actions runs it on every pull request across Python 3.9–3.13 and verifies that the package builds.
 
 ```bash
-pip install pandas termcolor tabulate unidecode pytest
+pip install pandas termcolor tabulate unidecode numpy faiss-cpu pytest
 pip install --no-deps -e .
 pytest
 ```
+
+See [CHANGELOG.md](CHANGELOG.md) for release notes.
 
 ---
 

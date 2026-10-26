@@ -43,7 +43,15 @@ def test_no_rows_are_lost_by_the_rule_engine(rules_namespace):
     """Every input row ends up in the main frame or in one of the set-aside frames."""
     raw = [raw for raw, _ in KNOWN_MAPPINGS] + ["xyz unknown 123", "", "Other", "42", "Chef"]
     ns = rules_namespace(raw)
-    assert len(ns["df"]) + len(ns["df_other"]) + len(ns["df_CWS"]) == len(raw)
+    assert len(ns["df"]) + len(ns["df_other"]) == len(raw)
+
+
+@pytest.mark.parametrize("title", ["Chef", "Baker", "Gastroenterologist"])
+def test_former_gastronomy_titles_flow_through(rules_namespace, title):
+    """Gastronomy titles are no longer set aside: they stay in the main frame."""
+    ns = rules_namespace(["Dermatologist", title])
+    assert ns["df"]["speciality"].tolist() == ["Dermatologist", title]
+    assert "df_CWS" not in ns
 
 
 @pytest.mark.parametrize("placeholder", ["", "Other", "-", "42", "x"])
