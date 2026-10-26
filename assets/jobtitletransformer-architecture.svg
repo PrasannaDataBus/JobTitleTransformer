@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1820" height="980" viewBox="0 0 1820 980" font-family="Inter, 'DejaVu Sans', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475467"/>
+    </marker>
+    <style>
+      .h1{font-size:36px;font-weight:700;fill:#101828}
+      .sub{font-size:19px;fill:#475467}
+      .colt{font-size:15px;font-weight:700;letter-spacing:1.6px;fill:#667085}
+      .bt{font-size:21px;font-weight:700;fill:#101828}
+      .bs{font-size:15.5px;fill:#344054}
+      .sm{font-size:14.5px;fill:#475467}
+      .code{font-family:'DejaVu Sans Mono', monospace;font-size:13.5px;fill:#1D2939}
+      .num{font-size:30px;font-weight:800;fill:#101828}
+      .chip{font-size:16px;font-weight:600;fill:#101828}
+      .chips{font-size:14px;fill:#475467}
+      .card{fill:#FFFFFF;stroke:#D0D5DD;stroke-width:1.5}
+      .codebg{fill:#F2F4F7}
+      .line{stroke:#475467;stroke-width:2.2;fill:none}
+      .lbl{font-size:13px;fill:#475467;font-style:italic}
+    </style>
+  </defs>
+
+  <rect width="1820" height="980" rx="24" fill="#F8FAFC"/>
+
+  <text x="40" y="70" class="h1">JobTitleTransformer</text>
+  <text x="40" y="104" class="sub">Hybrid NLP pipeline that normalises messy, multilingual healthcare job titles · Python · pandas · RegEx · SBERT · FAISS</text>
+
+  <text x="40" y="160" class="colt">INPUT</text>
+  <text x="290" y="160" class="colt">PREPROCESS</text>
+  <text x="580" y="160" class="colt">DETERMINISTIC RULES ENGINE</text>
+  <text x="1190" y="160" class="colt">SEMANTIC FALLBACK</text>
+  <text x="1500" y="160" class="colt">REVIEW &amp; GATES</text>
+
+  <!-- Input -->
+  <rect x="40" y="180" width="210" height="400" rx="14" class="card"/>
+  <text x="58" y="216" class="bt">Raw titles</text>
+  <text x="58" y="240" class="sm">DataFrame, Series or list</text>
+  <rect x="56" y="256" width="178" height="230" rx="8" class="codebg"/>
+  <text x="68" y="282" class="code">Dermatologue</text>
+  <text x="68" y="310" class="code">dermatogist</text>
+  <text x="68" y="338" class="code">Cirujano Plastico</text>
+  <text x="68" y="366" class="code">Médecin Esthétique</text>
+  <text x="68" y="394" class="code">Plastic &amp;amp;</text>
+  <text x="68" y="414" class="code">Reconstructive…</text>
+  <text x="68" y="442" class="code">RN</text>
+  <text x="68" y="470" class="code">xyz unknown 123</text>
+  <text x="58" y="520" class="sm">Free text from forms,</text>
+  <text x="58" y="542" class="sm">CRMs and registrations</text>
+
+  <path d="M250 380 H283" class="line" marker-end="url(#arr)"/>
+
+  <!-- Preprocess -->
+  <rect x="290" y="180" width="250" height="400" rx="14" class="card"/>
+  <text x="308" y="216" class="bt">Preprocessing</text>
+  <text x="308" y="240" class="sm">Vectorised pandas</text>
+  <line x1="308" y1="256" x2="522" y2="256" stroke="#EAECF0" stroke-width="1.5"/>
+  <text x="308" y="286" class="bs">• HTML entity decoding</text>
+  <text x="308" y="318" class="bs">• Unicode → ASCII</text>
+  <text x="324" y="340" class="sm">(unidecode)</text>
+  <text x="308" y="372" class="bs">• Whitespace and casing</text>
+  <text x="324" y="394" class="sm">normalised</text>
+  <text x="308" y="426" class="bs">• Leading codes stripped</text>
+  <text x="308" y="458" class="bs">• Placeholders (Other, -,</text>
+  <text x="324" y="480" class="sm">numbers) flagged</text>
+  <text x="308" y="512" class="bs">• Original value kept</text>
+  <text x="324" y="534" class="sm">in original_speciality</text>
+
+  <path d="M540 380 H573" class="line" marker-end="url(#arr)"/>
+
+  <!-- Rules engine -->
+  <rect x="580" y="180" width="570" height="400" rx="16" fill="#F4F3FF" stroke="#D9D6FE" stroke-width="1.5"/>
+  <rect x="600" y="200" width="125" height="96" rx="12" class="card"/>
+  <text x="616" y="240" class="num">95</text>
+  <text x="616" y="268" class="sm">categories</text>
+  <rect x="737" y="200" width="125" height="96" rx="12" class="card"/>
+  <text x="753" y="240" class="num">3,989</text>
+  <text x="753" y="268" class="sm">regex patterns</text>
+  <rect x="874" y="200" width="125" height="96" rx="12" class="card"/>
+  <text x="890" y="240" class="num">4,195</text>
+  <text x="890" y="268" class="sm">exact matches</text>
+  <rect x="1011" y="200" width="125" height="96" rx="12" class="card"/>
+  <text x="1027" y="240" class="num">2,319</text>
+  <text x="1027" y="268" class="sm">exclusions</text>
+
+  <rect x="600" y="310" width="536" height="250" rx="12" class="card"/>
+  <text x="618" y="342" class="bt">One module per category</text>
+  <text x="618" y="366" class="sm">Fixed execution order · variants + exact matches − exclusions</text>
+  <rect x="616" y="384" width="504" height="160" rx="8" class="codebg"/>
+  <text x="632" y="412" class="code" xml:space="preserve">Dermatologue          → Dermatologist</text>
+  <text x="632" y="438" class="code" xml:space="preserve">dermatogist           → Dermatologist</text>
+  <text x="632" y="464" class="code" xml:space="preserve">Cirujano Plastico     → Plastic Surgeon</text>
+  <text x="632" y="490" class="code" xml:space="preserve">Médecin Esthétique    → Aesthetic Physician</text>
+  <text x="632" y="516" class="code" xml:space="preserve">RN                    → Registered Nurse (RN)</text>
+
+  <path d="M1150 380 H1183" class="line" marker-end="url(#arr)"/>
+  <text x="1135" y="410" class="lbl" text-anchor="end"></text>
+
+  <!-- Semantic -->
+  <rect x="1190" y="180" width="270" height="400" rx="14" fill="#EEF4FF" stroke="#B2CCFF" stroke-width="1.5"/>
+  <text x="1208" y="216" class="bt">Semantic search</text>
+  <text x="1208" y="240" class="sm">Only for unmatched titles</text>
+  <rect x="1206" y="258" width="238" height="96" rx="10" class="card"/>
+  <text x="1222" y="286" class="bs">SBERT embeddings</text>
+  <text x="1222" y="310" class="code">all-MiniLM-L6-v2</text>
+  <text x="1222" y="334" class="sm">taxonomy labels as index</text>
+  <rect x="1206" y="366" width="238" height="96" rx="10" class="card"/>
+  <text x="1222" y="394" class="bs">FAISS vector search</text>
+  <text x="1222" y="418" class="code">IndexFlatL2</text>
+  <text x="1222" y="442" class="sm">nearest category, batched</text>
+  <text x="1208" y="500" class="sm">Optional distance threshold</text>
+  <text x="1208" y="522" class="sm">for low-confidence matches</text>
+
+  <path d="M1460 380 H1493" class="line" marker-end="url(#arr)"/>
+
+  <!-- Review & gates -->
+  <rect x="1500" y="180" width="280" height="190" rx="14" class="card"/>
+  <rect x="1500" y="180" width="8" height="190" rx="4" fill="#F79009"/>
+  <text x="1524" y="216" class="bt">Optional review</text>
+  <text x="1524" y="244" class="bs">Every ML mapping shown</text>
+  <text x="1524" y="268" class="bs">as original → category</text>
+  <text x="1524" y="292" class="bs">with counts</text>
+  <text x="1524" y="326" class="sm">review="interactive" asks</text>
+  <text x="1524" y="348" class="sm">for confirmation first</text>
+  <rect x="1500" y="390" width="280" height="190" rx="14" class="card"/>
+  <rect x="1500" y="390" width="8" height="190" rx="4" fill="#12B76A"/>
+  <text x="1524" y="426" class="bt">Integrity gates</text>
+  <text x="1524" y="454" class="bs">Every row tracked from</text>
+  <text x="1524" y="478" class="bs">input to output</text>
+  <text x="1524" y="512" class="bs">Same rows, same order,</text>
+  <text x="1524" y="536" class="bs">or an IntegrityError</text>
+  <path d="M1640 370 V388" class="line" marker-end="url(#arr)"/>
+
+  <!-- Output -->
+  <path d="M1640 580 V612" class="line" marker-end="url(#arr)"/>
+  <rect x="580" y="618" width="1200" height="78" rx="14" fill="#101828"/>
+  <text x="604" y="650" font-size="19" font-weight="700" fill="#FFFFFF">Normalised output</text>
+  <text x="604" y="678" font-size="15" fill="#D0D5DD">normalized_title + match_method (rules · semantic · placeholder · unmatched) · input untouched · row order preserved</text>
+  <path d="M415 580 V657 H573" class="line" marker-end="url(#arr)"/>
+  <text x="425" y="644" class="lbl">placeholders flagged</text>
+
+  <!-- Practices -->
+  <text x="40" y="770" class="colt">ENGINEERING PRACTICES</text>
+  <rect x="40" y="788" width="336" height="80" rx="12" class="card"/>
+  <text x="60" y="822" class="chip">Published on PyPI</text>
+  <text x="60" y="848" class="chips">pip install jobtitletransformer · 15 releases</text>
+  <rect x="391" y="788" width="336" height="80" rx="12" class="card"/>
+  <text x="411" y="822" class="chip">CI on Python 3.9–3.13</text>
+  <text x="411" y="848" class="chips">GitHub Actions on every pull request</text>
+  <rect x="742" y="788" width="336" height="80" rx="12" class="card"/>
+  <text x="762" y="822" class="chip">52 automated tests</text>
+  <text x="762" y="848" class="chips">Rules, API, FAISS search, row safety</text>
+  <rect x="1093" y="788" width="336" height="80" rx="12" class="card"/>
+  <text x="1113" y="822" class="chip">Multilingual · typo-tolerant</text>
+  <text x="1113" y="848" class="chips">EN, FR, ES, PT, TR, ID and more</text>
+  <rect x="1444" y="788" width="336" height="80" rx="12" class="card"/>
+  <text x="1464" y="822" class="chip">Explainable by design</text>
+  <text x="1464" y="848" class="chips">Every row says how it was matched</text>
+
+  <text x="40" y="930" class="sm">github.com/PrasannaDataBus/JobTitleTransformer · pypi.org/project/jobtitletransformer</text>
+</svg>

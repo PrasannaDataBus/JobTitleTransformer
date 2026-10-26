@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/PrasannaDataBus/JobTitleTransformer/actions/workflows/ci.yml/badge.svg)](https://github.com/PrasannaDataBus/JobTitleTransformer/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/jobtitletransformer)](https://pypi.org/project/jobtitletransformer/) [![Python](https://img.shields.io/pypi/pyversions/jobtitletransformer)](https://pypi.org/project/jobtitletransformer/)
 
+![JobTitleTransformer pipeline](assets/jobtitletransformer-architecture.png)
+
 **JobTitleTransformer** is a hybrid `NLP pipeline` that ingests, sanitizes and normalizes highly unstructured, multilingual healthcare job titles into a standardized taxonomy of 100 labels.
 
 Built for `ETL workflows`, it delivers high-quality `Data Modeling` for downstream platforms such as `Data Lakes`, `Data Hubs`, `Data Warehouses`, `Data Marts` and `Semantic Models`.
