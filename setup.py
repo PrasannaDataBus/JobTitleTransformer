@@ -2,20 +2,17 @@ from setuptools import setup, find_packages
 
 setup(
     name='jobtitletransformer',  # Must be unique on PyPI
-    version='0.1.23',
+    version='0.3.0',
     packages=find_packages(exclude=['tests', 'tests.*']), # include=["jobtitletransformer"]
     package_data={"JobTitleTransformer": ["job_scripts/*.py"]},
     install_requires=[
         'pandas',
         'numpy',
-        'nltk',
         'termcolor',
         'unidecode',
         'tabulate',
-        "scikit-learn",
         "sentence-transformers",
-        "faiss-cpu",
-        "torch"
+        "faiss-cpu"
     ],
     author='Prasanna UTHAMARAJ',
     author_email='prasannadatabuss@gmail.com',  # Optional but nice

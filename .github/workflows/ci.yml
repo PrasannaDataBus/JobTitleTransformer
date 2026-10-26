@@ -22,12 +22,12 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: pip
 
-      # The rule engine only needs the light dependencies. The ML fallback
-      # (sentence-transformers, FAISS, torch) is not exercised in CI.
+      # The semantic stage is tested with real FAISS and a stand-in encoder,
+      # so sentence-transformers / torch (and the model download) are not needed.
       - name: Install package and test dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas termcolor tabulate unidecode pytest
+          pip install pandas termcolor tabulate unidecode numpy faiss-cpu pytest
           pip install --no-deps -e .
 
       - name: Run tests

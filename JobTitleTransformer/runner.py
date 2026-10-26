@@ -1,8 +1,8 @@
-from importlib.resources import files
+"""Execution order of the curated rule scripts, and the legacy ``run_pipeline`` entry point."""
+import warnings
 
-
-# Rule scripts in order of execution. The ML fallback (TransformationHub.py) always runs last.
-ORDERED_SCRIPTS = [
+# Preprocessing first, then one script per taxonomy category, in a fixed order.
+RULE_SCRIPTS = [
     "_encode_decode.py",
     "Acupuncturist.py",
     "ARNP.py",
@@ -99,25 +99,26 @@ ORDERED_SCRIPTS = [
     "Trichologist.py",
     "Urologist.py",
     "VascularSurgeon.py",
-    "TransformationHub.py"
 ]
 
 
 def run_pipeline(df):
-    # Use a shared globals dict and inject df
-    globals_dict = {"df": df}
+    """Legacy entry point, kept for backwards compatibility.
 
-    # Execute each script
-    scripts_dir = files("JobTitleTransformer").joinpath("job_scripts")
-    for script_name in ORDERED_SCRIPTS:
-        # Locate the script inside the installed package (works from wheels and editable installs)
-        script = scripts_dir.joinpath(script_name)
-        print(f"\nExecuting: {script_name}")
+    Normalises the ``speciality`` column with the original interactive review of
+    semantic matches, and returns the frame with ``speciality`` replaced by the
+    normalised label. New code should use :func:`JobTitleTransformer.normalize`.
+    """
+    warnings.warn(
+        "run_pipeline() is deprecated; use JobTitleTransformer.normalize(df, column=...) instead.",
+        DeprecationWarning,
+        stacklevel=2,
+    )
+    from .api import normalize
 
-        code = compile(script.read_bytes(), str(script), "exec")
-        exec(code, globals_dict)
-
-        # Update df after each script
-        df = globals_dict["df"]
-
-    return df
+    result = normalize(df, column="speciality", review="interactive", verbose=True)
+    out = df.copy()
+    out["original_speciality"] = df["speciality"]
+    out["speciality"] = result["normalized_title"].where(result["normalized_title"].notna(), df["speciality"])
+    out["match_method"] = result["match_method"]
+    return out

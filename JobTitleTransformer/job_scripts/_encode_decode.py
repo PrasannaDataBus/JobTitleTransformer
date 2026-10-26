@@ -113,40 +113,6 @@ df['speciality'] = df['speciality'].apply(normalize_text)  # Apply normalization
 # Apply transformation only where speciality starts with numbers
 df['speciality'] = df['speciality'].apply(lambda x: re.sub(r'^\d+\s*', '', x) if isinstance(x, str) and re.match(r'^\d+', x) else x)
 
-# List of specialities that should be updated to theme "GAS"
-gas_specialities = [
-    "Head Chef",
-    "Pastry Chef Pastry Cook",
-    "Executive Chef",
-    "Wine & Spirits Industry",
-    "Sous-Chef",
-    'Culinary Consultant Consultant Chef',
-    'Agricultural Producer',
-    'Hotel Restaurant Equipment',
-    'Sushi Chef',
-    'Barman Bartender',
-    'Baker',
-    'Second de Cuisine',
-    'Restaurant Hotel Manager',
-    'Culinary Consultant',
-    'Chef',
-    'Other Food Industry',
-    'Food & Beverage Manager',
-    'Other Gastronomy Specialty',
-    'Gastroenterologist'
-]
-
-# Update theme to 'GAS' for matching speciality values
-df.loc[df['speciality'].isin(gas_specialities), 'theme'] = 'GAS'
-
-# Filtering logic: Keep only non valid records in df_other dataframe
-df_CWS = df[df['theme'] == 'GAS']
-
-# Print low-confidence sample
-print(colored("\nRecords where Theme = GAS", "red", attrs=["bold"]))
-print(tab(df_CWS.head(10), headers='keys', tablefmt='psql'))
-print(colored(f"\nRecords where Theme = GAS: {len(df_CWS)}", "red"))
-
 # Create clean working columns
 df['speciality'] = df['speciality'].fillna('Other').astype(str).str.strip()
 df['speciality'] = df['speciality'].astype(str).str.strip().replace(['-', 'nan', '', 'Unknown', 'Unspecified Specialty'], 'Other')
@@ -167,9 +133,6 @@ df_other = df[
     df['speciality'].astype(str).str.match(r'^\d+$') |  # numbers only
     df['speciality'].astype(str).str.match(r'^[A-Za-z]$')  # single letters
 ].reset_index(drop=True)
-
-# Remove records where Theme = GAS
-df_other = df_other[df_other['theme'] != 'GAS']
 
 # Print low-confidence sample
 print(colored("\nRecords where Job Title is Other, Unknown, None or non relevant", "red", attrs=["bold"]))
@@ -192,9 +155,6 @@ df = df[
     ~df['speciality'].astype(str).str.match(r'^\d+$') &  # Remove numbers only
     ~df['speciality'].astype(str).str.match(r'^[A-Za-z]$')  # Remove single letters
 ].reset_index(drop=True)
-
-# Remove records where Theme = GAS
-df = df[df['theme'] != 'GAS']
 
 # Print count of valid non-matching job titles that will be sent for machine learning process
 print(colored(f"\nCount of records that will be sent for transformation stages: {df.shape[0]}", 'red'))
